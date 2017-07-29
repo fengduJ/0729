@@ -1,0 +1,690 @@
+﻿<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差旅小秘</title>
+<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+<link href="../App_Themes/Css/flightinter.css" rel="stylesheet" type="text/css" />
+<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--头部-->
+<div class="member-header-menu">
+  <div class="member-header-menu-content">
+    <div class="member-header-menu-left">上海猫友科技股份有限公司<em>|</em>企业ID：68568</div>
+    <div class="member-header-menu-right"> <span><i></i>杨晓丹</span> <a href="../my/index.html">我的差旅</a> <a href="../index.html">退出</a> <span><i class="tel-icon"></i>客服专线：400-720-9969</span> </div>
+  </div>
+</div>
+
+<!--导航-->
+<div class="head-v3">
+  <div class="navigation-up">
+    <div class="navigation-inner">
+      <div class="navigation-v3">
+        <ul>
+          <li class="logo-member"><a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a></li>
+          <li class="" _t_nav="home">
+            <h2> <a href="../Member/index.html">首页</a> </h2>
+          </li>
+          <li class="nav-up-selected-inpage" _t_nav="yuding">
+            <h2> <a href="../Flight/index.html">预订<i></i></a> </h2>
+          </li>
+          <li class="" _t_nav="fuli">
+            <h2> <a href="#">企业福利<i></i></a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../My/index.html">我的差旅</a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../Todo/index.html">审批记录</a> </h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-down">
+    <div id="yuding" class="nav-down-menu menu-1" style="display:none0;" _t_nav="yuding">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:108px;">
+          <dd> <a href="../Flight/index.html">国内机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Flightinter/index.html" class="cur">国际机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Hotel/index.html">酒店</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Train/index.html">火车票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Car/index.html">租车</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <div id="fuli" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="fuli">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:325px;">
+          <dd> <a href="#">体检</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">企业培训</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">礼品卡</a> </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--头部结束--> 
+
+<!--内容-->
+<div class="searchlist-box">
+  <div class="searchlist-content">
+    <div class="crumbs-nav"><a href="#">预订</a>><a href="#">国际机票</a>><span>上海-新加坡</span> </div>
+    
+    <!--搜索-->
+    <div class="serarchlist-again">
+      <div class="serarchlist-again-list">
+        <ul>
+          <li class="serarch-type"><a href="#" class="active">因公</a><a href="#">因私</a></li>
+          <li>
+            <select name="" class="serarchlist-set">
+              <option>单程</option>
+              <option>往返</option>
+            </select>
+          </li>
+          <li>出发城市
+            <input type="text" value="上海" class="serarchlist-ipt">
+            <a href="#" class="serarch-list-switch"></a> </li>
+          <li>到达城市
+            <input type="text" value="新加坡" class="serarchlist-ipt">
+          </li>
+          <li>出发日期
+            <input type="text" value="2017-06-10" class="serarchlist-ipt">
+          </li>
+          <li>返回日期
+            <input type="text" value="2017-06-12" class="serarchlist-ipt" disabled>
+          </li>
+          <li>
+            <input type="button" name="button" id="button" value="搜索" class="serarchlist-btn">
+          </li>
+        </ul>
+      </div>
+      <div class="serarchlist-again-list">
+        <ul>
+          <li style=" margin-left:75px;">成人
+            <select name="" class="serarchlist-set" style="width:60px; margin-left:5px;">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </li>
+          <li>儿童(2-12岁)
+            <select name="" class="serarchlist-set" style="width:100px;margin-left:5px;">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </li>
+          <li>婴儿(<2岁)
+            <select name="" class="serarchlist-set" style="width:152px;margin-left:5px;">
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+            </select>
+          </li>
+          <li>舱位等级
+            <select name="" class="serarchlist-set" style="width:123px;margin-left:5px;">
+              <option>经济舱</option>
+              <option>超级经济舱</option>
+              <option>公务舱</option>
+              <option>头等舱</option>
+            </select>
+          </li>
+          <li class="view-direct-flight">
+            <input type="checkbox">
+            仅查看直飞航班</li>
+        </ul>
+      </div>
+    </div>
+    <!--搜索结束-->
+    <div class="serarchlist-voyage">上海 - 新加坡  单程(2017-05-24)<span class="flight-total-number">（共258个航班信息）</span><!--span class="flight-total-number">(已加载29个航班，<i></i>正在努力加载剩余航班信息)</span--><em>所有起飞\降落时间均为当地时间</em></div>
+    <div class="searchlist-content-box"> 
+      
+      <!--筛选和排序-->
+      <div class="searchlist-sort-screen">
+        <div class="searchlist-sort"><a href="#" class="active">默认排序</a><a href="#">起飞时间从早到晚<i class="sort-arrow-down"></i></a><a href="#">到达时间从早到晚<i class="sort-arrow-down"></i></a><a href="#">含税价从低到高<i class="sort-arrow-down"></i></a></div>
+        <div class="searchlist-screen"><a href="#" class="active">不含税价</a><a href="#">含税价</a></div>
+      </div>
+      
+      <!--筛选和排序结束--> 
+      
+      <!--加载中-->
+      <div class="air-load" style="display:none;"><i></i></div>
+      <!--加载中结束--> 
+      
+      <!--暂无-->
+      <div class="searchlist-no" style="display:none;">
+        <p><i></i></p>
+        <p>很抱歉，暂未查询到符合您要求的航班,您可以调整出行时间或目的地重新查询。</p>
+      </div>
+      <!--暂无结束--> 
+      
+      <!--列表-->
+      <div class="search-list-content"> 
+        <!--列表-->
+        
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/MU.gif"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>15:25</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p><span class="flight-number">2个航班 
+                <!--航班显示--> 
+                <span class="flight-number-box" style="display:none;"> <i>马来西亚航空MH389</i> <i>马来西亚航空MH609</i> </span> 
+                <!--航班显示结束--> 
+                </span>(中转：吉隆坡)</p>
+              <p class="search-list-direction-transit"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>00:05</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>445</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn" onclick="javascript:location='order.html'">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩3张</div>
+          </div>
+          
+          <!--航班详情-->
+          <div class="search-list-details" style="display:none;">
+            <div class="search-list-details-box">
+              <div class="search-list-details-air">
+                <p><img src="../upload/MU.gif"></p>
+                <P>马来西亚航空</P>
+              </div>
+              <div class="search-list-details-info">
+                <p><strong>MH389</strong><span>经济舱</span><span>计划机型：<em>333</em></span> </p>
+                <p><strong>起飞2017-06-07 15:25</strong><span>上海</span>浦东机场 PVG </p>
+                <P><strong>到达2017-06-07 20:50</strong><span>吉隆坡</span>吉隆坡国际机场 KUL</P>
+              </div>
+              <span class="search-list-details-time">飞行时长：总时长5小时25分</span> </div>
+            <div class="search-list-details-transit"><span><strong>中转:吉隆坡</strong> 停留时长:11小时10分钟</span></div>
+            <div class="search-list-details-box">
+              <div class="search-list-details-air">
+                <p><img src="../upload/MU.gif"></p>
+                <P>马来西亚航空</P>
+              </div>
+              <div class="search-list-details-info">
+                <p><strong>MH389</strong><span>经济舱</span><span>计划机型：<em>333</em> </span></p>
+                <p><strong>起飞2017-06-07 15:25</strong><span>上海</span>浦东机场 PVG </p>
+                <P><strong>到达2017-06-07 20:50</strong><span>吉隆坡</span>吉隆坡国际机场 KUL</P>
+              </div>
+              <span class="search-list-details-time">飞行时长：总时长5小时25分</span> </div>
+          </div>
+          <!--航班详情结束--> 
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/kn.gif"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>16:45</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>06:35</strong></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1320</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩1张</div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/hk.png"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>16:30</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>05:20</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1586</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩3张</div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/mu.gif"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>17:15</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>06:50</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1320</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus"></div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/hk.png"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>18:45</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>07:18</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1670</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩2张</div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/kn.gif"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>16:45</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>06:35</strong></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1320</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩1张</div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/hk.png"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>16:30</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>05:20</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1586</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩3张</div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/mu.gif"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>17:15</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p><span class="flight-number">2个航班 
+                <!--航班显示--> 
+                <span class="flight-number-box" style="display:none;"> <i>马来西亚航空MH389</i> <i>马来西亚航空MH609</i> </span> 
+                <!--航班显示结束--> 
+                </span>(中转：吉隆坡)</p>
+              <p class="search-list-direction-transit"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>06:50</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1320</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus"></div>
+          </div>
+        </div>
+        <div class="search-list-box">
+          <div class="search-list-info"> 
+            <!--航空公司-->
+            <div class="search-list-air">
+              <p><img src="../upload/hk.png"></p>
+              <p>马来西亚航空</p>
+            </div>
+            <!--航空公司结束--> 
+            
+            <!--出发机场时间-->
+            <div class="search-list-set-off">
+              <p><strong>18:45</strong></p>
+              <p>浦东机场<em>(上海)</em></p>
+            </div>
+            <!--出发机场时间结束--> 
+            
+            <!--舱位、时长-->
+            <div class="search-list-transit-time">
+              <p>直飞</p>
+              <p class="search-list-direction"></p>
+              <p>（经济舱）总时长8小时40分钟</p>
+            </div>
+            <!--舱位、时长结束--> 
+            
+            <!--到达机场时间-->
+            <div class="search-list-arrivals">
+              <P><strong>07:18</strong><span>+1天<!--i class="flight-arrival-time">抵达时间为当地时间：2017-06-08 0:05:00</i--></span></P>
+              <p>樟宜机场<em>(新加坡)</em></p>
+            </div>
+            <!--到达机场时间结束--> 
+            
+            <!--价格-->
+            <div class="search-list-pirce">
+              <p class="search-list-money"><em>¥</em><strong>1670</strong>起</p>
+              <p class="search-list-taxation">¥0/¥601</p>
+            </div>
+            <!--价格结束-->
+            
+            <div class="search-list-book">
+              <input type="button" value="预订" class="book-btn">
+              <a href="#">航班详情<i></i></a></div>
+            <div class="search-list-surplus">仅剩2张</div>
+          </div>
+        </div>
+        <!--列表结束--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--内容结束--> 
+
+<!--底部-->
+<div class="member-footer">
+  <p><a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em> <a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em> <a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em> <a href="../about.html#lianxi" target="_blank">联系我们</a></p>
+  <p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+</div>
+<!--底部结束--> 
+<!--在线客服-->
+<div id="top"></div>
+<!--在线客服结束--> 
+
+<!--超出标准提示-->
+<div class="excess-prompt" style="display:none;">
+  <div class="excess-prompt-box">
+    <div class="excess-prompt-menu"><span>请确定没有选择最低航班路线的原因</span><a href="#"></a></div>
+    <div class="excess-reason">
+      <h3>基于贵公司的差旅政策，因您未选择最低航班，故请您选择原因：</h3>
+      <ul>
+        <li>
+          <input type="radio">
+          陪同客户或领导</li>
+        <li>
+          <input type="radio">
+          航空公司偏好</li>
+        <li>
+          <input type="radio">
+          机场选择</li>
+        <li>
+          <input type="radio">
+          改签或退签因素</li>
+        <li>
+          <input type="radio">
+          起飞和到达时间不合适</li>
+        <li>
+          <input type="radio">
+          经批准可不选择最低价航班</li>
+      </ul>
+    </div>
+    <div class="excess-btn"><a href="#">确定</a></div>
+    <div class="excess-flight">
+      <P>基于贵公司的差旅政策，您选择的时间段内的最低价航班为：</P>
+      <p><span>中国国航</span> <span>CA1888</span><span>08:52起飞 </span><span>￥850</span></p>
+    </div>
+    <div class="excess-btn"><a href="#">预订该航班</a></div>
+  </div>
+</div>
+<!--超出标准提示结束-->
+
+</body>
+</html>

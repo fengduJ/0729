@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>差旅小秘</title>
+		<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+		<link href="../App_Themes/Css/order.css" rel="stylesheet" type="text/css" />
+		<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+		<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+		<script src="js/order.js"></script>
+	</head>
+
+	<body>
+
+		<!--头部-->
+
+		<div class="head">
+			<div class="head-content">
+				<div class="logo">
+					<a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a>
+				</div>
+				<div class="booking-process">
+					<dl class="cur">
+						<dd><i>1</i>填写</dd>
+					</dl>
+					<dl>
+						<dd><i>2</i>审批</dd>
+					</dl>
+					<dl>
+						<dd><i>3</i>支付</dd>
+					</dl>
+					<dl class="last">
+						<dd><i>4</i>完成</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+
+		<!--头部结束-->
+
+		<!--内容-->
+		<div class="order-warp">
+			<div class="order-content">
+				<!--左-->
+				<div class="order-left">
+					<div class="order-left-menu">乘客信息</div>
+					<!--搜索-->
+					<div class="order-passenger"> <span><strong>选择乘客</strong></span> <span>
+        <input type="text" value="" placeholder="输入姓名快速搜索" class="order-ipt orderchange" />
+        
+        <!--常用旅客-->
+        <div class="order-passenger-box" style="display:none; overflow: auto;"> 
+          <!--暂无-->
+          <p style="display:none;">没找到涉及"张"的相关人员，请您重新搜索。</p>
+          <!--暂无结束--> 
+          
+         <!-- <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span>--> </div>
+					<!--常用旅客结束-->
+
+					</span> <span class="order-common-passenger"><em>最近预订:</em>
+        <label>
+          <input type="checkbox" />
+          王晓晓</label>
+        <label>
+          <input type="checkbox" />
+          张筱筱</label>
+        <label>
+          <input type="checkbox" />
+          刘潇潇</label>
+        </span> </div>
+				<!--搜索结束-->
+
+				<!--乘客开始-->
+				<div id="order-list">
+					<div class="order-lists">
+						<div class="order-passenger-list">
+							<div class="order-list">
+								<dl class="short">
+									<dt><i class="order-passenger-number">1</i>姓名</dt>
+									<dd>
+										<input type="text" value="你好" placeholder="与所持证件保持一致" class="order-ipt PsgName judge" />
+										<div class="fill-explain"> <i class="question-icon"></i>
+											<!--填写说明-->
+											<div class="fill-explain-content" style="display:none;">
+												<div class="fill-explain-box">
+													<p> 1、乘客姓名与证件号码必须与乘车时所使用证件上的名字和号码一致，如有中文名，请填写中文名。</p>
+													<p> 2、如名字中包含生僻字可直接输入拼音代替。例如：“王鬳”可输入为“王yan”。其它证件。</p>
+													<p> 3、姓名最多输入不超过30个字符（1个汉字计为2个字符），如果超过30个字符，请按姓名中第一个汉字或英文字符开始按顺序连续输入30个字符（空格字符不输入）。</p>
+													<p>4、姓名中有”.”或”•”时，请仔细辩析身份证原件上的”.”或”•”，准确输入。</p>
+												</div>
+											</div>
+											<!--填写说明结束-->
+
+										</div>
+										<span class="order-passenger-operation"> <a class="delce" href="javascript:;">清空</a></span> </dd>
+								</dl>
+								<dl>
+									<dt>证件信息</dt>
+									<dd>
+										<select name="select" id="select" class="order-set set-type">
+											<option>身份证</option>
+											<option>护照</option>
+											<option>港澳通行证</option>
+											<option>台湾通行证</option>
+										</select>
+										<input type="text" value="爱的世界开" placeholder="证件号码" class="order-ipt IdNum judge" style="width:158px;" />
+									</dd>
+								</dl>
+								<dl class="short">
+									<dt>手机号码</dt>
+									<dd>
+										<input type="text" value="110" placeholder="用于接收短信通知" class="order-ipt phone judge"/>
+									</dd>
+								</dl>
+								<dl>
+									<dt>保险信息</dt>
+									<dd>
+										<select name="select" id="select " class="order-set money_se" style="width:85px;">baoxian
+											<option>5元/人</option>
+											<option>10元/人</option>
+											<option value="0">不买保险</option>
+										</select>
+										<p class="train-insurance"><span class="order-insurance-content train-insurance-info" style="display:none;"> (1)铁旅通+50万火车意外险（合众） 产品说明：火车意外保险50万，限投保一份，仅限当次车次.<br />
+                (2)铁旅通+20万火车意外险（合众） 产品说明：火车意外保险20万，限投保一份，仅限当次车次. </span>
+											<a href="javascript:;" id="train-insurance">铁旅通保险说明</a>
+										</p>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
+				<!--	拼接模块-->
+					<div id="add-orderlist"></div>
+				</div>
+				<!--添加-->
+				<div class="order-passenger-add">
+					<a href="javascript:;" id="addbtn">+ 添加乘客</a>
+				</div>
+
+				<!--乘客结束-->
+
+				<div class="order-left-menu top-border isds">出差原由</div>
+
+				<!--出差原由开始-->
+				<div class="business-reason isds">
+					<textarea name="textarea" id="textarea" cols="45" rows="5" class="business-reason-txt" placeholder="出差事由"></textarea>
+				</div>
+				<!--出差原由结束-->
+
+				<div class="order-left-menu top-border isds">审批人</div>
+
+				<!--审批人开始-->
+				<div class="add-approver isds">
+					<dl>
+						<a href="javascript:;" id="tongxun">
+							<dt>+</dt>
+							<dd>添加审批人</dd>
+						</a>
+					</dl>
+					<div class="addprove">
+
+					</div>
+					<!--<span class="arrow-gray"><img src="../App_Themes/Images/member/arrow-gray.png" /></span>
+       <dl>
+          <dt><i></i></dt>
+          <dd>王馨</dd>
+       </dl>-->
+       
+				</div>
+
+				<!--审批人结束-->
+
+				<div class="order-left-menu top-border ">联系人</div>
+
+				<!--联系人开始-->
+
+				<div class="order-cntacts ">
+					<div class="order-list order-list-Contacts">
+						<dl>
+							<dt><em>*</em>姓名</dt>
+							<dd>
+								<input type="text" value="杨晓丹" placeholder="" class="order-ipt useript" />
+							</dd>
+						</dl>
+						<dl>
+							<dt><em>*</em>手机号码</dt>
+							<dd>
+								<input type="text" value="18818066867" placeholder="" class="order-ipt numpit" />
+							</dd>
+						</dl>
+					</div>
+				</div>
+
+				<!--联系人结束-->
+
+			</div>
+			<!--左结束-->
+
+			<!--右-->
+			<div class="order-right">
+
+				<!--航班-->
+				<div class="order-flight-info">
+					<div class="order-flight-info-standard">车次信息 </div>
+
+					<!--信息-->
+					<div class="order-flight-info-list">
+						<!--<h4><span>2017-06-13</span>上海虹桥 - 北京南</h4>
+          <ul>
+            <li class="order-flight-city-time">
+              <dl>
+                <dt>07:30</dt>
+                <dd>上海虹桥</dd>
+              </dl>
+              <span><img src="../App_Themes/Images/member/right-arrow-short.png" /></span>
+              <dl class="last">
+                <dt>09:50</dt>
+                <dd>北京南 </dd>
+              </dl>
+            </li>
+            <li class="order-flight-ticket-trice">票价<strong>¥553.5</strong></li>
+          </ul>-->
+					</div>
+
+					<!--信息结束-->
+
+					<div class="order-flight-info-gravity">
+						<a href="#">[重新选择车次] </a>
+					</div>
+				</div>
+				<!--航班结束-->
+
+				<!--价格-->
+				<div class="order-price-detailed"></div>
+				<!--价格结束-->
+
+				<!--支付-->
+				<div class="order-payment">
+					<div class="order-payment-price"><strong>应付金额:</strong><span><em>¥</em><span id="titprice">560.5</span></span>
+					</div>
+					<div class="order-payment-list">
+						<dl>
+							<dt class="gray">票面总价</dt>
+							<dd class="gray bprice">¥ <span>553.5</span>x<span>1</span></dd>
+						</dl>
+						<dl>
+							<dt class="gray"> 保险费 </dt>
+							<dd class="gray baoxian" >¥ <span>5</span></dd>
+						</dl>
+						<dl>
+							<dt class="gray"> 服务费 </dt>
+							<dd class="gray serve" >¥ <span class="serve">2</span></dd>
+						</dl>
+					</div>
+				</div>
+				<!--支付结束-->
+
+				<!--温馨提示-->
+				<div class="train-reminder">
+					<h3>温馨提示</h3>
+					<dl>
+						<dt> 1.</dt>
+						<dd class="font-org">平台提供火车票代购是与12306铁路官网统一的，我们义务为大家进行代购！平台提供的火车票保险服务采取自愿原则，您可根据自身需求选择是否需要保险。</dd>
+					</dl>
+					<dl>
+						<dt> 2.</dt>
+						<dd>确认成功后，我们会及时短信通知您购票结果；您也可以到订单中心查看出票情况。</dd>
+					</dl>
+					<dl>
+						<dt> 3.</dt>
+						<dd>网络订票无法保证车票连座，如您需要连座票，请至线下售票点购票。</dd>
+					</dl>
+					<dl>
+						<dt> 4.</dt>
+						<dd>什么是 <strong>身份核验</strong>
+							<a href="identity-Verification.html" target="_blank">点击这里</a> 查看。 </dd>
+					</dl>
+				</div>
+				<!--温馨提示结束-->
+				
+				<!--支付方式-->
+				<div class="order-payment-method"> 支付方式：
+					<label>
+          <input type="radio" name="radio" checked="checked"/>
+          现付</label>
+					<label>
+          <input type="radio" name="radio" />
+          预存款</label>
+				</div>
+				<!--支付方式结束-->
+
+				<!--协议-->
+				<div class="train-agreement">
+					<input type="checkbox" checked/> 我已阅读并同意
+					<a href="agreement.html" target="_blank">《火车票平台线上代购服务协议》</a>
+				</div>
+				<!--协议结束-->
+
+				<!--提交-->
+				<div class="order-btn">
+					<input type="button" value="提交订单" id="filbtn">
+				</div>
+				<!--提交结束-->
+
+			</div>
+			<!--右结束-->
+		</div>
+		</div>
+		<!--内容结束-->
+
+		<!--底部-->
+		<div class="member-footer">
+			<p>
+				<a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em>
+				<a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em>
+				<a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em>
+				<a href="../about.html#lianxi" target="_blank">联系我们</a>
+			</p>
+			<p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+		</div>
+		<!--底部结束-->
+		<!--在线客服-->
+		<div id="top"></div>
+		<!--在线客服结束-->
+
+		<!--审批人-->
+		<div class="approver-layer" style=" display:none;position: fixed;">
+			<div class="approver-content">
+				<div class="approver-menu"><span>选择审批人</span>
+					<a id="stop" href="javascript:;"></a>
+				</div>
+				<div class="approver-box">
+					<!--左边-->
+					<div class="approver-box-left" id="approver-box-left"></div>
+					<!--左边结束-->
+
+					<!--右边-->
+					<div class="approver-box-right">
+						<div class="approver-search"><i></i>
+							<input type="text" value="" placeholder="搜索企业联系人" />
+						</div>
+						<div class="approver-company-name">上海际珂信息科技有限公司</div>
+						<div class="approver-company-framework">
+							<a href="javascript:;" class="order-temp">上海际珂信息科技有限公司</a><span></span>
+							<!--<em>></em><a href="javascript:;">技术研发中心</a><em></em>--></div>
+						<div class="approver-select" style="display:none">
+							<input type="checkbox" /> 全选
+						</div>
+						<div class="approver-list">
+							<!--部门-->
+							<div class="approver-list-department" style="display:none;">
+								<ul>
+									<!--<li>
+                <input type="checkbox" />
+                技术部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                客服部<em>10人</em></li>
+              <li>
+                <input type="checkbox" />
+                市场部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                技术部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                客服部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                市场部<em>9人</em></li>-->
+								</ul>
+							</div>
+							<!--部门结束-->
+
+							<!--列表-->
+							<div class="approver-list-pick">
+								<!--<dl class="active">
+              <i><em></em></i>
+              <dt><img src="../upload/wangxin.jpg" /></dt>
+              <dd>
+                <p class="name">王馨</p>
+                <p>副总经理</p>
+              </dd>
+            </dl>
+            <dl class="active">
+              <i><em></em></i>
+              <dt><img src="../upload/yangxiaodan.jpg" /></dt>
+              <dd>
+                <p class="name">杨晓丹</p>
+                <p>客服经理</p>
+              </dd>
+            </dl>
+            <dl class="active">
+            	<i><em></em></i>
+              <dt><img src="../upload/lixiaofei.jpg" /></dt>
+              <dd>
+                <p class="name">李小飞</p>
+                <p>技术经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/wangxin.jpg" /></dt>
+              <dd>
+                <p class="name">王馨</p>
+                <p>副总经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/yangxiaodan.jpg" /></dt>
+              <dd>
+                <p class="name">杨晓丹</p>
+                <p>客服经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/lixiaofei.jpg" /></dt>
+              <dd>
+                <p class="name">李小飞</p>
+                <p>技术经理</p>
+              </dd>
+            </dl>-->
+							</div>
+							<!--列表结束-->
+
+						</div>
+					</div>
+					<!--右边结束-->
+
+				</div>
+				<div class="approver-btn gray">
+					<a href="#">确定</a>
+				</div>
+			</div>
+		</div>
+		<!--审批人结束-->
+	</body>
+
+</html>

@@ -1,0 +1,226 @@
+/*====================下单=================*/
+.order-warp{width:100%; background:#F0F2F5; padding:20px 0px;}
+.order-content{width:1180px;  margin:0px auto; overflow:hidden;}
+
+/*左*/
+.order-left{float:left; width:780px; border:1px solid #e6e6e6; background:#fff;}
+.order-left-menu{width:100%; height:39px; line-height:39px; font-size:16px; text-indent:20px; font-weight:bold;}
+.order-left-menu.top-border{border-top:1px solid #eee; border-bottom:1px solid #eee;background:#f5f5f5; height:35px; line-height:35px;}
+.order-ipt{border:1px solid #ccc; height:26px; line-height:26px; text-indent:6px; width:138px;}
+.order-set{border:1px solid #ccc; padding:3px 0px; font-size:12px;}
+.order-passenger-list{width:740px; margin:0px auto; background:#F8F8FF; border-bottom:1px solid #E4E4FF; margin-top:15px; padding-bottom:10px; padding-top:5px;}
+.order-list{width:740px; margin:0px auto;}
+.order-list-international{margin-bottom:15px; background:#F8F8FF; border-bottom:1px solid #E4E4FF; margin-top:15px; }
+.order-list-international .order-list dl{width:740px;}
+.order-list h5{display:block; font-weight:bold; text-indent:85px; padding:5px 0px; color:#666;}
+.order-list h5 em{color:#f60;}
+.order-list dl{display:inline-block;width:430px; padding:5px 0px; position:relative; }
+.order-list dl.short{width:260px;}
+.order-list dl dt{display:inline-block; font-size:12px; width:70px; text-align:right; margin-right:10px; margin-top:5px;}
+.order-list dl dd{display:inline-block; position:relative;}
+.order-list dl.remind{font-size:12px; background:#FFFCD8; color:#999; padding:3px 0px; margin-left:82px; width:500px;}
+.order-list dl.remind i{display:inline-block; width:14px; height:14px; vertical-align:middle; background:url(../Images/member/tanhao-org-icon.png) no-repeat; margin:0px 5px;}
+.order-passenger-operation{position:absolute; top:5px; right:-450px;color:#999;}
+.order-passenger-operation a{color:#181777;}
+.order-passenger-operation em{display:inline-block; margin-right:100px;}
+.order-passenger-operation input{display:inline-block; vertical-align:middle;}
+.order-passenger{width:100%; border-top:1px solid #e0e0e0; background:#f8f8f8; border-bottom:1px solid #e0e0e0; padding:8px 0px;}
+.order-passenger span{display:inline-block; margin-left:10px; position:relative;}
+.order-passenger span strong{padding-left:15px;}
+.order-passenger span.order-common-passenger{margin-left:60px;}
+.order-passenger span.order-common-passenger em{color:#999; margin-right:10px;}
+.order-common-passenger label{display:inline-block; margin-right:20px;}
+.order-common-passenger label input{display:inline-block; vertical-align:-3px; margin-right:1px;}
+.order-passenger-box{position:absolute; left:0px; top:28px; z-index:99; border:1px solid #C8D9EF; width:600px; overflow:hidden; background:#EFF6FC; padding-bottom:12px;}
+.order-passenger-box p{display:block; text-align:center; color:#666; padding:25px 0px;}
+.order-passenger-box span{float:left; margin-left:10px; margin-top:10px; width:90px; height:16px; overflow:hidden;}
+.order-passenger-box span input{display:inline-block; vertical-align:middle;}
+.order-insurance p{display:block; padding-top:5px; padding-bottom:2px; position:relative;}
+.order-insurance p a{display:inline-block; margin-right:10px; border-bottom:1px dashed  #181777; color:#181777;}
+.order-insurance p strong{color:#f60;}
+.order-insurance p em{display:inline-block; padding-left:10px; color:#10a200;}
+.order-insurance p input{display:inline-block; vertical-align:middle; margin-right:2px;}
+.order-insurance-content{position:absolute; top:25px; left:18px; border:1px solid #181777; width:800px;  background:#fff; z-index:9; padding:10px; line-height:20px;}
+.business-reason{width:740px; margin:0px auto; padding:20px 0px;}
+.add-approver{width:740px; margin:0px auto; overflow:hidden; padding:20px 0px;}
+.add-approver dl{float:left;}
+.add-approver dl a{color:#333;}
+.add-approver dl a:hover{color:#181777;}
+.add-approver dl a:hover dt{border:1px solid #181777; color:#181777;}
+.add-approver dl a dt{width:38px; height:38px; line-height:35px; border-radius:38px; border:1px solid #ccc; text-align:center; font-size:33px; color:#ccc; margin-left:10px;}
+.add-approver dl dt{width:60px; position:relative; text-align:center;}
+.add-approver dl dt img{width:40px; height:40px; border-radius:40px;}
+.add-approver dl dt i{position:absolute; top:-1px; right:2px; z-index:9; width:16px; height:16px; background:url(../Images/member/close.png) no-repeat; cursor:pointer;}
+.add-approver dl dd{width:60px; text-align:center; padding-top:5px;}
+.arrow-gray{float:left; margin:18px 10px 0px 10px;}
+.business-reason-txt{border:1px solid #ccc; width:90%; height:40px; padding:5px; line-height:20px;}
+.order-cntacts{width:100%;}
+.fill-explain{position:relative; display:inline-block;}
+.question-icon{display:inline-block; width:18px; height:18px; background:url(../Images/member/question-icon.png) no-repeat; vertical-align:middle; margin-left:10px; cursor:pointer;}
+.fill-explain-content{position:absolute; left:10px; top:20px; width:500px; border:1px solid #181777; background:#fff; z-index:99;}
+.fill-explain-type{width:470px; margin:0px auto; border-bottom:1px solid #ccc; height:30px; overflow:hidden;}
+.fill-explain-type a{float:left; font-size:12px; color:#333; padding:0px 10px; height:30px; line-height:30px;}
+.fill-explain-type a.cur{color:#181777; font-weight:bold; height:29px; border-bottom:2px solid #181777;}
+.fill-explain-box{width:470px; padding:10px 0px; margin:0px auto;}
+.fill-explain-box p{display:block; margin-bottom:10px;}
+.fill-explain-box p.center{text-align:center;}
+.order-passenger-number{display:inline-block; vertical-align:middle; margin-right:5px; width:20px; height:25px; color:#fff; text-align:center; font-size:12px; color:#fff; background:url(../Images/member/number-bg.png) no-repeat;}
+.order-passenger-add{width:740px; margin:0px auto; padding:20px 0px;}
+.order-passenger-add a{display:inline-block; height:40px; line-height:40px; border-radius:5px; padding:0px 30px;  color:#fff; font-size:15px; border:1px solid #ccc; background:#fff; color:#181777; font-weight:bold;}
+.order-passenger-add a:hover{background:#181777;border:1px solid #181777;color:#fff;}
+.flightiner-city-nationality{position:absolute; left:0px; top:28px; border:1px solid #181777; width:247px; background:#fff; z-index:9;}
+.flightiner-city-nationality ul li{width:230px; margin:0px auto; height:30px; line-height:30px; border-bottom:1px dotted #ccc; color:#181777; cursor:pointer;}
+.flightiner-city-nationality ul li:hover{background:#EFF6FC;}
+.flightiner-city-nationality ul li span{float:left;}
+.flightiner-city-nationality ul li em{float:right;}
+.order-list-Contacts{overflow:hidden; padding:15px 0px;}
+.order-list-Contacts dl{float:left; width:300px; }
+.order-list-Contacts dl input{width:180px;}
+.order-list-Contacts dl em{color:#F00;}
+
+/*右*/
+.order-right{float:right; width:380px;}
+.order-flight-info{width:378px; border:1px solid #e0e0e0; background:#fff; margin-bottom:10px;}
+.order-flight-info-standard{width:100%; display:block; padding:7px 0px; text-indent:10px; border-bottom:1px solid #e0e0e0; background:#f8f8f8; font-size:16px;}
+.order-flight-info-list{width:378px; border-bottom:1px solid #e0e0e0; padding:10px 0px;}
+.order-flight-info-list h4{width:358px; margin:0px auto; font-size:12px; color:#333; padding-bottom:2px;}
+.order-flight-info-list h4 span{display:inline-block; margin-right:10px;}
+.order-flight-info-list ul li{width:358px; margin:0px auto; color:#666;}
+.order-flight-info-list ul li.order-flight-airline-shipping span{display:inline-block; margin-right:10px;}
+.order-flight-info-list ul li.order-flight-airline-shipping span img{display:inline-block; width:16px; height:16px; vertical-align:middle; margin-right:5px;}
+.order-flight-info-list ul li.order-flight-city-time{overflow:hidden; padding:10px 0px;}
+.order-flight-info-list ul li.order-flight-city-time span{width:40px; float:left; margin:0px 15px; margin-top:13px;}
+.order-flight-info-list ul li.order-flight-city-time dl{float:left; width:140px; color:#333;}
+.order-flight-info-list ul li.order-flight-city-time dl dt{font-weight:bold; text-align:right;}
+.order-flight-info-list ul li.order-flight-city-time dl dd{text-align:right;}
+.order-flight-info-list ul li.order-flight-city-time dl.last dt{text-align:left;}
+.order-flight-info-list ul li.order-flight-city-time dl.last dd{text-align:left;}
+.order-flight-info-list ul li.order-flight-city-time dl p{ display:block; text-align:right;}
+.order-flight-info-list ul li.order-flight-city-time dl.last p{display:block; text-align:left;}
+.order-flight-info-list ul li.order-flight-ticket-trice strong{display:inline-block; margin:0px 5px;color:#f60;}
+.order-flight-change{color:#181777; border-bottom:1px dashed #181777; cursor:pointer; position:relative;}
+.order-flight-model{position:relative;border-bottom:1px dashed #181777; cursor:pointer;}
+.order-right-layer{position:absolute; left:0px; top:25px; border:1px solid #181777; background:#fff; overflow:hidden;}
+.ticket-changes{left:-465px;}
+.model{left:-480px;}
+.order-flight-tab{ margin-right:-1px; margin-bottom:-1px;}
+.order-flight-tab.center td{text-align:center;}
+.order-flight-tab td{border-bottom:1px solid #ddd; border-right:1px solid #ddd; padding:5px; line-height:20px; color:#333; vertical-align:top;}
+.order-flight-tab td.tdbg{background:#f5f5f5;}
+.order-flight-info-gravity{width:100%; display:block; padding:5px 0px; text-indent:10px;}
+.order-flight-info-gravity a{color:#181777;}
+.order-flight-info-gravity a:hover{text-decoration:underline;}
+.order-payment{width:378px; border:1px solid #FFD89D; background:#FEFAF1; padding-bottom:10px;}
+.order-payment-price{width:338px; margin:0px auto; padding-top:10px;overflow:hidden;}
+.order-payment-price strong{float:left; font-size:14px; margin-top:5px;}
+.order-payment-price span{float:right; font-size:28px; color:#f60; line-height:100%;}
+.order-payment-price span em{font-size:12px;color:#999; padding-right:5px;}
+.order-payment-passenger{width:338px; margin:0px auto; text-align:right; padding-bottom:5px;}
+.order-payment-passenger a{font-size:12px; color:#181777;}
+.order-payment-passenger a:hover{text-decoration:underline;}
+.order-payment-passenger a i{display:inline-block; width:9px; height:5px; background:url(../Images/member/arrow-jiantou.png) no-repeat; vertical-align:2px; margin-left:5px;}
+.order-payment-list{width:338px; margin:0px auto;}
+.order-payment-list dl{position:relative; border-bottom:1px dotted #ccc; height:25px; top:-10px;}
+.order-payment-list dl dt{position:absolute; top:15px; left:0px;background:#FEFAF1; padding-right:10px; font-weight:bold;}
+.order-payment-list dl dd{position:absolute; top:15px; right:0px;background:#FEFAF1; padding-left:10px;font-weight:bold;}
+.order-payment-list dl dt.gray{font-weight:normal; color:#999;}
+.order-payment-list dl dd.gray{font-weight:normal; color:#999;}
+.order-payment-method{width:378px; border:1px solid #e0e0e0; background:#fff; margin-top:10px; padding:15px 0px; font-size:14px; text-indent:20px;}
+.order-payment-method label{display:inline-block; margin-right:20px; text-indent:0px;}
+.order-payment-method label input{display:inline-block; vertical-align:middle;}
+.order-btn{width:380px; text-align:center; padding:20px 0px;}
+.order-btn input{display:inline-block; border:none; height:45px; line-height:45px;border-radius:5px; background:#181777; font-size:16px; color:#fff; padding:0px 50px; cursor:pointer;}
+.order-btn input:hover{background:#20209F;}
+
+/*审批人*/
+.approver-layer{position:absolute; left:0x; top:0px; width:100%; height:100%;FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7f000000, endColorstr=#7f000000); background-color:rgba(0,0,0,0.6);z-index:999999;}
+.approver-content{width:680px; margin:0px auto; background:#fff; height:535px; margin-top:100px; border-radius:5px;box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);}
+.approver-menu{width:680px; height:49px; line-height:49px; border-bottom:1px solid #ECECED;}
+.approver-menu span{float:left; font-size:16px; margin-left:10px;}
+.approver-menu a{float:right; width:16px; height:16px; background:url(../Images/member/close-over-icon.png) no-repeat; margin-top:17px; margin-right:10px;}
+.approver-box{width:660px; background:#FAFAFC; padding:10px;border-bottom:1px solid #ECECED;  overflow:hidden;}
+
+/*左*/
+.approver-box-left{float:left; width:338px; border:1px solid #e1e1e1; background:#fff; height:380px; border-radius:3px; overflow:hidden;}
+.approver-box-left span{ float:left; margin-left:10px; margin-top:10px; height:26px; line-height:26px; border:1px solid #ddd; border-radius:5px; color:#333; padding:0px 5px;}
+.approver-box-left span a{display:inline-block; width:10px; height:10px; vertical-align:middle; background:url(../Images/member/colse-small.png) no-repeat; margin-right:3px;}
+/*右*/
+.approver-box-right{float:right;width:308px;border:1px solid #e1e1e1; background:#fff; height:380px; border-radius:3px; position:relative;}
+.approver-search{width:308px; border-bottom:1px solid #e1e1e1; position:relative;}
+.approver-search input{ border:none; width:100%; height:40px; line-height:40px; text-indent:33px;}
+.approver-search i{position:absolute; top:12px; left:10px; width:16px; height:16px; background:url(../Images/member/search-small.png) no-repeat;}
+.approver-company-name{width:308px; margin:0px auto; height:30px; line-height:30px;text-align:center; font-size:14px; color:#666; overflow:hidden;}
+.approver-company-framework{width:288px; margin:0px auto; font-size:14px; overflow:hidden; color:#999; text-overflow:ellipsis;}
+.approver-company-framework a{color:#181777;}
+.approver-company-framework em{display:inline-block;margin:0px 6px;}
+.approver-select{width:288px; margin:0px auto; font-size:14px; padding:5px 0px;}
+.approver-select input{display:inline-block; vertical-align:middle; margin-right:5px;}
+.approver-list{width:288px; height:220px; margin:0px auto; overflow-y:auto;}
+.approver-list-department{width:268px;}
+.approver-list-department ul li{width:268px; height:50px; line-height:50px; border-bottom:1px solid #e6e6e6; position:relative;}
+.approver-list-department ul li input{display:inline-block; vertical-align:middle;}
+.approver-list-department ul li:hover{cursor:pointer; background:#DFEAF9;}
+.approver-list-department ul li em{ position:absolute; top:0px; right:10px; color:#999;}
+.approver-list-pick{width:268px;}
+.approver-list-pick dl{width:268px; height:50px; overflow:hidden; position:relative;}
+.approver-list-pick dl:hover{cursor:pointer; background:#DFEAF9;}
+.approver-list-pick dl.active i{position:absolute; top:10px; left:5px; width:30px; height:30px;FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7f000000, endColorstr=#7f000000); background-color:rgba(0,0,0,0.6);z-index:9; border-radius:30px;}
+.approver-list-pick dl.active i em{display:inline-block; width:18px; height:12px; background:url(../Images/member/duigou-white-icon.png) no-repeat; margin-top:10px; margin-left:6px;}
+.approver-list-pick dl dt{float:left; width:30px; height:30px; margin-left:5px; margin-top:10px;}
+.approver-list-pick dl dt img{width:30px; height:30px; border-radius:30px;}
+.approver-list-pick dl dd{float:left; margin-left:10px; width:220px; margin-top:5px;}
+.approver-list-pick dl dd p{display:block; font-size:12px; color:#999;}
+.approver-list-pick dl dd p.name{color:#333;}
+.approver-btn{width:680px; text-align:center; padding:20px 0px;}
+.approver-btn a{display:inline-block; height:40px; line-height:40px;border-radius:5px; background:#181777; font-size:16px; color:#fff; padding:0px 50px;}
+.approver-btn a:hover{background:#20209F;}
+.approver-btn.gray a{background:#ccc; cursor:default;}
+
+/*国际机票*/
+.order-flight-explain{width:100%; border-bottom:1px solid #eee; background:#fafafa; padding:5px 0px; color:#666;}
+.order-flight-explain i{ display:inline-block; vertical-align:middle; margin-left:10px; margin-right:5px; width:14px; height:14px; background:url(../Images/member/icon_info.png) no-repeat;}
+
+
+.flightinter-info-box{ width:100%;}
+.flightinter-date-city{ width:100%; background:#181777; color:#fff; padding:2px 0px; text-indent:10px;}
+.flightinter-price{ width:100%; background:#f8f8f8; padding-bottom:5px;}
+.flightinter-price p{ display:block; text-indent:10px; padding-top:5px;}
+.flightinter-price p strong{ color:#f60;}
+.flightinter-price p a{color:#181777;}
+.flightinter-price p a:hover{ text-decoration:underline;}
+
+.gender-content span{ display:inline-block; margin-right:10px;}
+.gender-content span input{ display:inline-block; vertical-align:middle;}
+
+
+
+
+
+
+
+.flightinter-agreement{color:#999; padding-top:15px;}
+.flightinter-agreement input{display:inline-block; vertical-align:middle;}
+.flightinter-agreement a{color:#181777;}
+.flightinter-agreement a:hover{text-decoration:underline;}
+
+
+
+/*火车票*/
+.train-insurance{display:inline-block; margin-left:5px; position:relative;}
+.train-insurance a{color:#181777; border-bottom:1px dashed #181777;}
+.train-insurance-info{left:0px;}
+.train-reminder{width:378px;border:1px solid #e1e1e1; background:#fff; margin-top:10px; padding-bottom:10px;}
+.train-reminder h3{display:block; height:30px;line-height:30px;text-indent:10px; color:#666; font-size:14px; border-bottom:1px solid #eee;}
+.train-reminder dl{ width:358px; margin:0px auto; overflow:hidden; font-size:12px; color:#666; margin-top:10px; line-height:18px;}
+.train-reminder dl dt{float:left; width:18px;}
+.train-reminder dl dd{float:left; width:340px;}
+.train-reminder dl dd.font-org{color:#f60;}
+.train-reminder dl dd strong{color:#f60;}
+.train-reminder dl dd a{color:#181777;}
+.train-agreement{color:#999; padding-top:15px;}
+.train-agreement input{display:inline-block; vertical-align:middle;}
+.train-agreement a{color:#181777;}
+.book-agreement{width:1180px; margin:0px auto; padding-top:60px; padding-bottom:30px;}
+.book-agreement h3{ display:block; text-align:center; font-size:22px; border-bottom:1px solid #e6e6e6; padding-bottom:10px;}
+.book-agreement dl{ width:1180px; margin-top:20px; line-height:20px; color:#666;}
+.book-agreement dl dt{ font-weight:bold; padding-bottom:2px; color:#333;}

@@ -1,0 +1,202 @@
+﻿/*=================================首页=================================*/
+.carousel-figure{width:100%;}
+.carousel-figure img{width:100%; display:block;}
+.imgSlideMain {clear:both;overflow:hidden;width:100%;height:160px;margin:0 auto;position:relative}
+.imgSlide {clear:both;}
+.imgSlide li {overflow:hidden;width:100%;position:relative}
+.imgSlide li img{width:100%; display:block;}
+.imgSlide li h2 {position:absolute;bottom:0;height:28px;line-height:28px;background-position:0 -549px;display:block;font-weight:normal;color:#fff;font-size:14px;width:100%;text-align:left;text-indent:1em;}
+.navSlide {position:absolute;display:block;bottom:8px;z-index:999;height:15px; width:100%; text-align:center;}
+.navSlide .i_point {text-indent:-9999em;width:8px;height:8px;-webkit-border-radius:4px;border-radius:4px;background:#ffffff;
+overflow:hidden; display:inline-block;-moz-opacity:.8;opacity:.8;margin-right:10px;}
+.navSlide .active {background:#F08200;-moz-opacity:.8;opacity:.8;}
+.nav{width:100%;clear:both; overflow:hidden; background:#fff; position:relative; padding-top:5px; padding-bottom:20px; overflow:hidden;}
+.nav a{font-size:14px; color:#F08200;}
+.nav dl{float:left; width:33.33%; margin-top:15px;}
+.nav dl dt{display:block; text-align:center; padding-bottom:5px;}
+.nav dl dt img{width:50px; height:50px;}
+.nav dl dd{display:block; text-align:center;}
+.home-pic{width:100%;}
+.home-pic img{width:100%; display:block;}
+
+/*=================================企业实力=================================*/
+.enterprise-strength{width:100%; background:#fff; overflow:hidden;}
+.enterprise-strength ul li{float:left; width:33%; height:45px; line-height:45px; text-align:center; border-bottom:1px solid #eee; border-right:1px solid #eee; box-sizing:border-box;}
+.enterprise-strength ul li.last{width:34%; border-right:none;}
+.enterprise-strength ul li a{display:block; font-size:14px; color:#808080;}
+.enterprise-strength ul li.cur{background:#5E67AC;}
+.enterprise-strength ul li.cur a{color:#fff;}
+
+/*公司简介*/
+.about{width:100%; background:#fff; padding:20px 0px; margin:0px auto;}
+.about h3{display:block; width:90%; margin:0px auto;}
+.about h3 img{ width:100%; display:block;}
+.about p{display:block;width:90%; margin:0px auto; font-size:14px; color:#505050; line-height:25px; margin-top:15px;}
+.about p.name{font-size:20px; font-weight:bold; line-height:28px;}
+.about p strong{color:#F00;}
+
+/*发展历程*/
+.develop{width:100%; background:url(Images/bg_earth.png) #fff  no-repeat bottom; background-size:100%; overflow:hidden; padding:30px 0px;}
+.develop ul li{float:right; width:65%; border-left:1px solid #0662AB; position:relative;}
+.develop ul li dl{width:100%; position:relative; margin-top:50px; float:left;}
+.develop ul li dl.cur dt{color:#ff6600; font-weight:bold;}
+.develop ul li dl.cur dd{color:#ff6600; font-weight:bold;}
+.develop ul li dl:last-child{margin-bottom:50px;}
+.develop ul li dl dt{position:absolute; top:0px; left:-115px; font-size:16px; color:#0662AB; text-align:right;}
+.develop ul li dl dt.right{ text-indent:33px;}
+.develop ul li dl i{position:absolute;top:3px; left:108px; width:10px; height:10px; border:1px solid #0662AB; border-radius:10px; background:#fff;}
+.develop ul li dl dd{float:left; font-size:14px; margin-left:30px; line-height:20px; color:#505050; padding-right:5px;}
+.top-arrow{position:absolute; left:-12px; top:-10px; width:25px; height:10px; background:url(Images/arrow-top.png) no-repeat; background-size:25px 10px;}
+.bottom-yuan{position:absolute; left:-6px; bottom:0px; width:10px; height:10px; border-radius:10px; background:#0662AB;}
+
+/*荣誉资质*/
+.honor{width:100%; background:#fff; padding-bottom:20px;}
+.honor dl{width:90%; margin:0px auto; padding-top:20px; border-bottom:1px dotted #ddd;}
+.honor dl dt{display:block;}
+.honor dl dt img{width:100%; display:block;}
+.honor dl dd{display:block; font-size:14px; text-align:center; color:#333; padding:15px 0px;}
+
+/*创始团队*/
+.team{width:100%; background:#fff; padding-bottom:20px;}
+.team dl{width:90%; margin:0px auto; padding-top:20px; border-bottom:1px dotted #ddd;}
+.team dl:last-child{ border-bottom:none;}
+.team dl dt{display:block;}
+.team dl dt img{width:100%;}
+.team dl dd{display:block; padding:15px 0px;}
+.team dl dd p{display:block;}
+.team dl dd p.name{font-size:20px; text-align:center;}
+.team dl dd p.zhiwei{font-size:14px; text-align:center; padding:5px 0px;}
+.team dl dd p.miaoshu{font-size:12px; color:#666; line-height:22px;}
+
+/*工作机会*/
+.job{width:100%;}
+.job-info{width:90%; margin:0px auto; font-size:14px; color:#808080; line-height:22px; padding:15px 0px;}
+.job-info p{display:block; text-align:center; color:#f60; padding-top:5px;}
+.job-list-no{width:100%;background:#fff; border-top:1px solid #eee; border-bottom:1px solid #eee; padding-top:40px; padding-bottom:50px;}
+.job-list-no p{display:block; text-align:center; font-size:14px; color:#999; padding-top:10px;}
+.job-list-no p i{display:inline-block; width:50px; height:50px; background:url(Images/icon-tishi.png) no-repeat; background-size:100%;}
+.job-list{width:100%; background:#fff; border-top:1px solid #eee; border-bottom:1px solid #eee;}
+.job-list ul li{width:94%; margin:0px auto; border-bottom:1px solid #eee; padding:15px 0px; overflow:hidden; margin-bottom:-1px;}
+.job-list ul li span{ float:left; font-size:14px; color:#333;}
+.job-list ul li span.last{ float:right; color:#0060B2;}
+.job-list ul li:last-child{border-bottom:none;}
+.job-list-content{width:100%; background:#f9f9f9; border-top:2px solid #0060B2;}
+.job-list-content dl{width:96%; margin:0px auto; margin-bottom:20px;}
+.job-list-content dt{display:block; font-size:14px; font-weight:bold;}
+.job-list-content dd{display:block;}
+.job-list-content dd p{display:block; font-size:12px; padding-top:10px; color:#999;}
+.job-list-email{display:block; font-size:14px; color:#f60; text-align:center;}
+.job-pic{width:100%; padding:15px 0px; background:#f6f6f6;}
+.job-pic p{display:block; text-align:center; font-size:14px; padding-bottom:10px; line-height:20px;}
+.job-pic img{width:100%; display:block;}
+
+/*联系我们*/
+.contact-us{width:100%; background:#fff; padding:20px 0px;}
+.contact-us p{display:block; width:90%; margin:0px auto; font-size:14px; color:#666; padding-bottom:12px;}
+.contact-us p strong{color:#ff6600; font-size:18px;}
+.contact-us p.name{font-size:20px; text-align:center; padding-top:10px; padding-bottom:15px;}
+.map{width:90%; margin:10px auto;}
+.iw_poi_content{font-size:12px;}
+.iw_poi_title{font-size:14px;}
+
+/*=================================差旅系统=================================*/
+.travel{width:100%; background:#fff;}
+.travel-info{width:100%; background:url(Images/travel_bg.png); background-size:100% 100%; padding-bottom:20px;}
+.travel-info p{display:block; width:96%; margin:0px auto; text-align:center; font-size:24px; font-weight:bold; padding-top:20px;}
+.travel-info img{width:100%; display:block;}
+.travel-pic{width:100%;}
+.travel-pic img{width:100%; display:block;}
+.travel-title{width:90%; margin:0px auto; font-size:18px; line-height:25px; color:#ff6600; padding-top:20px; font-weight:bold; text-align:center;}
+.travel-list{width:90%; margin:0px auto;}
+.travel-list h3{display:block; text-align:center; font-size:18px;padding-top:20px; font-weight:bold;}
+.travel-list:last-child{border-bottom:none;}
+.travel-list dl{width:100%; overflow:hidden; margin-top:15px; border-bottom:1px solid #eee; padding-bottom:15px;}
+.travel-list dl dt{float:left; width:30px;  height:30px;}
+.travel-list dl dt img{width:30px; height:30px;}
+.travel-list dl dd{float:left; margin-top:5px; margin-left:15px; width:85%; font-size:12px; line-height:20px; color:#666;}
+
+
+/*=================================商旅接口=================================*/
+.aio{width:100%; background:#fff;}
+.aio-pic{width:90%; margin:0px auto;}
+.aio-pic img{width:100%; display:block;}
+.aio-pic p{display:block; text-align:center; font-size:24px; padding:20px 0px; color:#0060B2;}
+.aio-info{width:90%; margin:0px auto; padding:15px 0px;}
+.aio-info p{display:block; font-size:14px; color:#666; line-height:20px; margin-bottom:5px;}
+.aio-info p a{display:inline-block; width:150px; height:40px; line-height:40px; background:#F08200; text-align:center; color:#fff; border-radius:50px; margin-top:6px;}
+.aio-info p.btn{text-align:center; padding-top:10px;}
+.aio-tedian{width:100%; background:#f6f6f6;}
+.aio-tedian p{display:block; text-align:center; font-size:24px; padding:20px 0px; color:#333;}
+.aio-tedian ul li{display:block; padding-bottom:20px;}
+.aio-tedian ul li img{width:100%; display:block;}
+.aio-gongneng{width:90%; margin:0px auto;}
+.aio-gongneng dl{width:100%; border-bottom:1px dotted #ccc; padding:20px 0px;}
+.aio-gongneng dl dt{display:block;}
+.aio-gongneng dl dt img{width:100%; display:block}
+.aio-gongneng dl dd{display:block;}
+.aio-gongneng dl dd h5{display:block; text-align:center; font-size:20px; padding:10px 0px;}
+.aio-gongneng dl dd p{display:block; font-size:12px; line-height:20px; color:#666;}
+
+
+/*=================================移动POS=================================*/
+.pos{width:100%; background:#fff;}
+.pos-pic{width:90%; margin:0px auto;}
+.pos-pic img{width:100%; display:block;}
+.pos-pic p{display:block; text-align:center; font-size:24px; padding:20px 0px; color:#0060B2;}
+.pos-info{width:90%; margin:0px auto; padding:15px 0px;}
+.pos-info p{display:block; font-size:14px; color:#666; line-height:20px; margin-bottom:5px;}
+.pos-info p strong{color:#ff6600;}
+.pos-info p a{display:inline-block; width:150px; height:40px; line-height:40px; background:#F08200; text-align:center; color:#fff; border-radius:50px; margin-top:5px;}
+.pos-info p.btn{ text-align:center; padding-top:10px;}
+.pos-gongneng{width:100%; background:url(Images/pos-gongneng.jpg) no-repeat; background-size:100% 100%; overflow:hidden;}
+.pos-gongneng p{display:block; text-align:center; font-size:24px; padding:20px 0px; color:#fff;}
+.pos-gongneng dl{width:90%; margin:0px auto; border:1px dotted #999; margin-bottom:20px; overflow:hidden; padding:15px 0px;}
+.pos-gongneng dl dt{float:left; width:50px; height:50px; margin-left:10px;}
+.pos-gongneng dl dt img{width:100%; display:block;}
+.pos-gongneng dl dd{float:left; margin-left:15px; width:70%;}
+.pos-gongneng dl dd h5{font-size:14px; color:#fff; font-weight:bold;}
+.pos-gongneng dl dd span{font-size:12px; color:#ccc; line-height:16px;}
+.pos-liucheng{width:100%; background:#f6f6f6; padding-top:30px; padding-bottom:40px;}
+.pos-liucheng p{display:block; width:90%; margin:0px auto; text-align:center; font-size:20px; padding-top:10px;  color:#333;}
+.pos-liucheng img{width:100%; display:block;}
+
+
+/*=================================售后无忧=================================*/
+.service-info{width:100%; background:#fff; padding-bottom:15px;}
+.service-info h3{display:block; text-align:center;font-size: 24px;color: #0060B2; padding-top:15px;padding-bottom: 10px;
+font-weight: bold;}
+.service-info p{display:block; width:90%; text-align:center; line-height:20px; color:#666; margin:0px auto; font-size:12px;}
+.service-list{width:90%; margin:0px auto; padding-bottom:22px;}
+.service-list dl{width:100%; background:#fff;box-shadow: 0px 1px 10px #ccc; margin-top:20px;}
+.service-list dl dt{display:block; text-align:center; padding:10px 0px;}
+.service-list dl dd{display:block;}
+.service-list dl dd h5{display:block; text-align:center; font-size:22px;}
+.service-list dl dd p{display:block; width:90%; margin:0px auto; font-size:12px; color:#999; line-height:20px; text-align:center; padding-top:10px; padding-bottom:5px;}
+
+
+/*=================================我要申请=================================*/
+.apply{width:100%; background:#fff;}
+.apply h3{display:block;text-align: center;font-size:20px;font-weight: bold;color: #94C923; height:50px; line-height:50px; background:#f5f5f9; margin-bottom:8px;}
+.apply ul li{width:90%; margin:0px auto; height:50px; line-height:50px; overflow:hidden;}
+.apply ul li span{float:left; font-size:12px; margin-right:15px; color:#505050; margin-top:2px;}
+.apply-ipt{ width:85%; border:1px solid #e6e6e6; height:33px; text-indent:5px; border-radius:3px;}
+.apply-set{width:85%; background:#fff;border:none;height:33px;float: left;font-size: 12px;margin-top: 10px; border:1px solid #eee; border-radius:3px;}
+.apply ul li.apply-btn{padding-top:10px; padding-bottom:20px;text-align:center;}
+.apply ul li.apply-btn a{display:inline-block; background:#ff6600; font-size:14px; color:#fff; height:40px;  line-height:40px; border-radius:5px; width:50%; text-align:center;}
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+.apply-ipt{width:80%;}
+.develop ul li dl dt{position:absolute; top:0px; left:-100px; font-size:16px; color:#0662AB; text-align:right;}
+.develop ul li dl i{position:absolute;top:3px; left:93px; width:10px; height:10px; border:1px solid #0662AB; border-radius:10px; background:#fff;}
+.travel-list dl dd{float:left; margin-top:2px; margin-left:15px; width:80%; font-size:12px; line-height:20px; color:#666;}
+}
+
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+.apply-ipt{width:85%;}
+.develop ul li dl dt{position:absolute; top:0px; left:-100px; font-size:16px; color:#0662AB; text-align:right;}
+.develop ul li dl i{position:absolute;top:3px; left:93px; width:10px; height:10px; border:1px solid #0662AB; border-radius:10px; background:#fff;}
+.travel-list dl dd{float:left; margin-top:2px; margin-left:15px; width:80%; font-size:12px; line-height:20px; color:#666;}
+}
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6P */
+}

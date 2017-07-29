@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差旅小秘</title>
+<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+<link href="../App_Themes/Css/todo.css" rel="stylesheet" type="text/css" />
+<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--头部-->
+<div class="member-header-menu">
+  <div class="member-header-menu-content">
+    <div class="member-header-menu-left">上海猫友科技股份有限公司<em>|</em>企业ID：68568</div>
+    <div class="member-header-menu-right"> <span><i></i>杨晓丹</span> <a href="../my/index.html">我的差旅</a> <a href="../index.html">退出</a> <span><i class="tel-icon"></i>客服专线：400-720-9969</span> </div>
+  </div>
+</div>
+
+<!--导航-->
+<div class="head-v3">
+  <div class="navigation-up">
+    <div class="navigation-inner">
+      <div class="navigation-v3">
+        <ul>
+          <li class="logo-member"><a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a></li>
+          <li class="" _t_nav="home">
+            <h2> <a href="../Member/index.html">首页</a> </h2>
+          </li>
+          <li class="" _t_nav="yuding">
+            <h2> <a href="../Flight/index.html">预订<i></i></a> </h2>
+          </li>
+          <li class="" _t_nav="fuli">
+            <h2> <a href="#">企业福利<i></i></a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../My/index.html">我的差旅</a> </h2>
+          </li>
+          <li class="nav-up-selected-inpage last">
+            <h2> <a href="../Todo/index.html">审批记录</a> </h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-down">
+    <div id="yuding" class="nav-down-menu menu-1" style="display:none;" _t_nav="yuding">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:108px;">
+          <dd> <a href="../Flight/index.html">国内机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Flightinter/index.html">国际机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Hotel/index.html">酒店</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Train/index.html">火车票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Car/index.html">租车</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <div id="fuli" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="fuli">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:325px;">
+          <dd> <a href="#">体检</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">企业培训</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">礼品卡</a> </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--头部结束--> 
+
+<!--内容-->
+<div class="todo">
+  <div class="todo-box"> 
+    
+    <!--搜索-->
+    <div class="todo-search">
+      <ul>
+        <li>订单号
+          <input type="text" value="" placeholder="订单号" class="todo-search-ipt long" />
+        </li>
+        <li>关键字
+          <input type="text" value="" placeholder="中文名/英文名"  class="todo-search-ipt long" />
+        </li>
+        <li>提交日期
+          <input type="text" value="" placeholder="yyyy-mm-yy"  class="todo-search-ipt" />
+          -
+          <input type="text" value="" placeholder="yyyy-mm-yy"  class="todo-search-ipt" />
+        </li>
+        <li>订单类型
+          <select name="" class="todo-search-ipt todo-select">
+            <option>全部</option>
+            <option>国内机票</option>
+            <option>国际机票</option>
+            <option>火车票</option>
+            <option>酒店</option>
+            <option>租车</option>
+          </select>
+        </li>
+        <li>状态
+          <select name="" class="todo-search-ipt todo-select">
+            <option>全部</option>
+            <option>已通过</option>
+            <option>未通过</option>
+            <option>审批中</option>
+          </select>
+        </li>
+        <li><a href="#" class="button todo-search-btn">搜索</a></li>
+      </ul>
+    </div>
+    <!--搜索结束--> 
+    
+    <!--类型-->
+    <div class="todo-type">
+      <ul>
+        <li onclick="javascript:location='index.html'">我的申请</li>
+        <li onclick="javascript:location='daishenpi.html'">待我审批</li>
+        <li class="cur" onclick="javascript:location='yishenpi.html'">我已审批</li>
+      </ul>
+    </div>
+    <!--类型结束-->
+    
+    <div class="todo-content"> 
+      
+      <!--暂无-->
+      <div class="common-no" style="display:none;">
+        <p><i class="todo-no-icon"></i></p>
+        <p>暂无待办事项</p>
+      </div>
+      <!--暂无结束--> 
+      
+      <!--列表-->
+      
+      <div class="todo-content-list">
+        <ul>
+          <li>
+            <dl>
+              <dt>
+                <p><span><i class="flight-order-icon"></i>订单号：<strong>2017042800087</strong></span><span>事由:<strong>公司出差</strong></span><span>行程：上海-广州 2017-05-05 07:30 MU1508</span></p>
+                <p><span>出行人：杨丹</span><span class="last">提交时间：2017-04-28 14:05</span><span class="last">预订人：杨丹</span></p>
+              </dt>
+              <dd> <span class="todo-state blue"><i></i>我已同意</span> <span>审批说明：同意</span> <span>审批方式：在线审批</span> <a href="yishenpidetail-tongyi.html">查看详情</a> </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                <p><span><i class="train-order-icon"></i>订单号：<strong>2017042800087</strong></span><span>事由:<strong>出差考察项目</strong></span><span>行程：上海-南京 2017-05-05 07:30 G128</span></p>
+                <p><span>出行人：杨丹</span><span class="last">提交时间：2017-04-28 14:05</span><span class="last">预订人：杨丹</span></p>
+              </dt>
+              <dd> <span class="todo-state gray"><i></i>我已否决</span> <a href="yishenpidetail-foujue.html">查看详情</a> </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                <p><span><i class="train-order-icon"></i>订单号：<strong>2017042800087</strong></span><span>事由:<strong>洽谈客户</strong></span><span>行程：上海-广州 2017-05-05 07:30 G1688</span></p>
+                <p><span>出行人：杨丹</span><span class="last">提交时间：2017-04-28 14:05</span><span class="last">预订人：杨丹</span></p>
+              </dt>
+              <dd> <span class="todo-state blue"><i></i>我已同意</span> <a href="yishenpidetail-tongyi.html">查看详情</a> </dd>
+            </dl>
+          </li>
+          <li>
+            <dl>
+              <dt>
+                <p><span><i class="flight-order-icon"></i>订单号：<strong>2017042800087</strong></span><span>事由:<strong>客户售后培训</strong></span><span>行程：上海-南京 2017-05-05 07:30 FM2688</span></p>
+                <p><span>出行人：杨丹</span><span class="last">提交时间：2017-04-28 14:05</span><span class="last">预订人：杨丹</span></p>
+              </dt>
+              <dd> <span class="todo-state gray"><i></i>我已否决</span> <a href="yishenpidetail-foujue.html">查看详情</a> </dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+      
+      <!--列表结束--> 
+      
+    </div>
+  </div>
+</div>
+<!--内容结束--> 
+
+<!--底部-->
+<div class="member-footer">
+  <p><a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em> <a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em> <a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em> <a href="../about.html#lianxi" target="_blank">联系我们</a></p>
+  <p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+</div>
+<!--底部结束--> 
+<!--在线客服-->
+<div id="top"></div>
+<!--在线客服结束-->
+</body>
+</html>

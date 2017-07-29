@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差旅小秘</title>
+<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+<link href="../App_Themes/Css/flightinter.css" rel="stylesheet" type="text/css" />
+<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+
+
+</head>
+
+<body>
+
+<!--头部-->
+<div class="member-header-menu">
+  <div class="member-header-menu-content">
+    <div class="member-header-menu-left">上海猫友科技股份有限公司<em>|</em>企业ID：<sapn id="eld">68568</sapn></div>
+    <div class="member-header-menu-right"> <span><i></i><sapn id="username">杨晓丹</sapn></span> <a href="../my/index.html">我的差旅</a> <a href="../index.html">退出</a> <span><i class="tel-icon"></i>客服专线：400-720-9969</span> </div>
+  </div>
+</div>
+
+<!--导航-->
+<div class="head-v3">
+  <div class="navigation-up">
+    <div class="navigation-inner">
+      <div class="navigation-v3">
+        <ul>
+          <li class="logo-member"><a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a></li>
+          <li class="" _t_nav="home">
+            <h2> <a href="../Member/index.html">首页</a> </h2>
+          </li>
+          <li class="nav-up-selected-inpage" _t_nav="yuding">
+            <h2> <a href="../Flight/index.html">预订<i></i></a> </h2>
+          </li>
+          <li class="" _t_nav="fuli">
+            <h2> <a href="#">企业福利<i></i></a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../My/index.html">我的差旅</a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../Todo/index.html">审批记录</a> </h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-down">
+    <div id="yuding" class="nav-down-menu menu-1" style="display:none0;" _t_nav="yuding">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:108px;">
+          <dd> <a href="../Flight/index.html">国内机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Flightinter/index.html" class="cur">国际机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Hotel/index.html">酒店</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Train/index.html">火车票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Car/index.html">租车</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <div id="fuli" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="fuli">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:325px;">
+          <dd> <a href="#">体检</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">企业培训</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">礼品卡</a> </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+<!--头部结束--> 
+
+<!--内容-->
+<div class="flightinter-banner">
+  <div class="search-warp"> 
+    <!--搜索-->
+    <div class="search-box">
+      <h3>国际机票搜索</h3>
+      <div class="search-content">
+        <ul>
+          <li class="common-search-reason bottom"><a href="#" class="cur">因公<i></i></a><a href="#">因私<i></i></a><!--因私提示--><span class="private-prompt" style="display:none;"><i></i>私人订单，不会分享给公司及其他人。<a href="#"></a></span> <!--因私提示结束--></li>
+          <li class="common-search-type">
+            <label>航班类型</label>
+            <span>
+            <input type="radio" checked="checked" />
+            单程</span><span>
+            <input type="radio" />
+            往返</span></li>
+          <li>
+            <label>出发城市</label>
+            <input type="text" value="" id="forcontiy"  placeholder="出发城市" class="common-search-ipt" />
+            <!--切换--> 
+            <a href="#" class="common-search-switch"></a> 
+            <!--切换结束--> 
+          </li>
+          <li>
+            <label>到达城市</label>
+            <input type="text" value="" id="tocontiy" placeholder="到达城市" class="common-search-ipt" />
+          </li>
+          <li>
+            <label>出发日期</label>
+            <input type="text" value="" placeholder="yyyy-mm-dd" class="common-search-ipt" />
+          </li>
+          <li>
+            <label>返回日期</label>
+            <input type="text" value="" placeholder="yyyy-mm-dd" class="common-search-ipt" disabled="disabled" />
+          </li>
+          <li class="common-search-btn"><a href="searchList.html">搜索</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--搜索结束--> 
+  </div>
+</div>
+<div class="common-content"> 
+  <!--左-->
+  <div class="common-content-left">
+    <div class="two-code"> <img src="../App_Themes/Images/Common/two-code.png" /> </div>
+  </div>
+  
+  <!--右-->
+  <div class="common-content-right">
+    <div class="flight-menu">
+      <h3>近期国际机票订单</h3>
+      <a href="../my/flightinterOrder.html">更多></a></div>
+    <div class="flight-recent-orders"> 
+      
+      <!--暂无-->
+      <div class="common-no"  style="display:none;">
+        <p><i class="order-no-icon"></i></p>
+        <p>暂无订单信息！</p>
+      </div>
+      <!--暂无结束-->
+      
+      <div class="flight-recent-orders-list  flightinter-recent-orders-list">
+        <ul>
+          <li class="recent-order-title"> <span class="flight-order-date">预订日期 </span> <span class="flight-order-number">订单号</span> <span class="flight-order-voyage">行程</span> <span class="flight-order-price">总价 </span>  <span class="flight-order-state">订单状态</span> </li>
+          <li class="recent-order-whitebg"> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">上海-洛杉矶（单程）</span> <span class="flight-order-price">¥1188 </span> <span class="flight-order-state">已取消</span> </li>
+          <li> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">北京-大阪（单程）</span> <span class="flight-order-price">¥1120 </span>  <span class="flight-order-state">已成交</span> </li>
+          <li class="recent-order-whitebg"> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">上海-韩国（单程）</span> <span class="flight-order-price">¥535 </span>  <span class="flight-order-state">已取消</span> </li>
+          <li> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">上海-新加坡（单程）</span> <span class="flight-order-price">¥799 </span>  <span class="flight-order-state">已取消</span> </li>
+          <li class="recent-order-whitebg"> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">上海-法兰克福（单程）</span> <span class="flight-order-price">¥2368 </span>  <span class="flight-order-state">已取消</span> </li>
+          <li> <span class="flight-order-date">2017-04-27 </span> <span class="flight-order-number"><a href="#">3727159922</a></span> <span class="flight-order-voyage">南京-马来西亚（单程）</span> <span class="flight-order-price">¥1396 </span>  <span class="flight-order-state">已取消</span> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--内容结束--> 
+
+<!--底部-->
+<div class="member-footer">
+   <p><a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em> <a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em> <a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em> <a href="../about.html#lianxi" target="_blank">联系我们</a></p>
+<p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+</div>
+<!--底部结束--> 
+<!--在线客服-->
+<div id="top"></div>
+<!--在线客服结束-->
+</body>
+</html>

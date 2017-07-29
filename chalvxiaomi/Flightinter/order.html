@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差旅小秘</title>
+<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+<link href="../App_Themes/Css/order.css" rel="stylesheet" type="text/css" />
+<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!--头部-->
+
+<div class="head">
+  <div class="head-content">
+    <div class="logo"><a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a></div>
+    <div class="booking-process">
+      <dl class="cur">
+        <dd><i>1</i>填写</dd>
+      </dl>
+      <dl>
+        <dd><i>2</i>审批</dd>
+      </dl>
+      <dl>
+        <dd><i>3</i>支付</dd>
+      </dl>
+      <dl class="last">
+        <dd><i>4</i>完成</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!--头部结束--> 
+
+<!--内容-->
+<div class="order-warp">
+  <div class="order-content"> 
+    <!--左-->
+    <div class="order-left">
+      <div class="order-left-menu">乘机人</div>
+      <!--搜索-->
+      <div class="order-passenger"> <span><strong>选择乘机人</strong></span> <span>
+        <input type="text" value="" placeholder="输入姓名快速搜索" class="order-ipt" />
+        
+        <!--常用旅客-->
+        <div class="order-passenger-box" style="display:none;"> 
+          <!--暂无-->
+          <p style="display:none;">没找到涉及"张"的相关人员，请您重新搜索。</p>
+          <!--暂无结束--> 
+          
+          <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> <span>
+          <input type="checkbox" />
+          杨晓丹</span> <span>
+          <input type="checkbox" />
+          杨五</span> <span>
+          <input type="checkbox" />
+          杨六</span> </div>
+        <!--常用旅客结束--> 
+        
+        </span> <span class="order-common-passenger"><em>最近预订:</em>
+        <label>
+          <input type="checkbox" />
+          王晓晓</label>
+        <label>
+          <input type="checkbox" />
+          张筱筱</label>
+        <label>
+          <input type="checkbox" />
+          刘潇潇</label>
+        </span> </div>
+      <!--搜索结束--> 
+      
+      <!--乘机人开始-->
+      <div class="order-passenger-list order-list-international">
+        <div class="order-list ">
+          <h5>第1位乘机人<em>(成人票)</em></h5>
+          <dl>
+            <dt>姓名</dt>
+            <dd>
+              <input type="text" value="" placeholder="姓(拼音或英文)" class="order-ipt" style="width:120px;"/>
+              <input type="text" value="" placeholder="名(拼音或英文)" class="order-ipt" style="width:120px;" />
+              <div class="fill-explain"> <i class="question-icon"></i> 
+                <!--填写说明-->
+                <div class="fill-explain-content" style="display:none;">
+                  <div class="fill-explain-type"> <a href="#" class="cur">填写说明</a> <a href="#">老版护照</a> <a href="#">新版护照</a> <a href="#">港澳通行证</a> <a href="#">台湾通行证</a> <a href="#">台胞证</a> </div>
+                  
+                  <!--填写-->
+                  <div class="fill-explain-box">
+                    <p> 1. 姓名需与乘机所持证件的姓名一致</p>
+                    <p> 2. 中文姓名:<br />
+                      若持护照乘机，必须确认护照上有中文姓名。
+                      生僻字可用拼音代替，拼音之后不可再输入汉字，需用拼音代替。<br />
+                      例如:“王鬳军”可输入为“王yanjun”。
+                      姓名中有特殊符号“.”“-”等，可不用输入，例如：“汉祖然•买卖提”可输入为“汉祖然买卖提”。<br />
+                      香港、台湾、澳门的护照不支持国内航班，请改用其它证件。</p>
+                    <p>3. 英文姓名:<br />
+                      按照证件上的顺序填写，姓氏在前名字在后，并用“/”区分，<br />
+                      不区分大小写，如Lee/David。<br />
+                      姓名超过26个字符请使用缩写，乘客姓氏不能缩写，名可以缩写。</p>
+                  </div>
+                  <!--填写结束--> 
+                  
+                  <!--老版护照-->
+                  <div class="fill-explain-box" style="display:none;">
+                    <p> 请严格按照登记时所用证件信息填写。</p>
+                    <p class="center"><img src="../App_Themes/Images/member/zj-lhz.png" /></p>
+                  </div>
+                  <!--老版护照结束--> 
+                  
+                  <!--新版护照-->
+                  <div class="fill-explain-box" style="display:none;">
+                    <p> 请严格按照登记时所用证件信息填写。</p>
+                    <p class="center"><img src="../App_Themes/Images/member/zj-xhz.png" /></p>
+                  </div>
+                  <!--新版护照结束--> 
+                  
+                  <!--港澳通行证-->
+                  <div class="fill-explain-box" style="display:none;">
+                    <p> 请严格按照登记时所用证件信息填写。</p>
+                    <p class="center"><img src="../App_Themes/Images/member/zj-gatxz.png" /></p>
+                  </div>
+                  <!--港澳通行证结束--> 
+                  
+                  <!--台湾通行证-->
+                  <div class="fill-explain-box" style="display:none;">
+                    <p> 请严格按照登记时所用证件信息填写。</p>
+                    <p class="center"><img src="../App_Themes/Images/member/zj-twtxz.png" /></p>
+                  </div>
+                  <!--台湾通行证结束--> 
+                  
+                  <!--台胞证-->
+                  <div class="fill-explain-box" style="display:none;">
+                    <p> 请严格按照登记时所用证件信息填写。</p>
+                    <p class="center"><img src="../App_Themes/Images/member/zj-tbz.png" /></p>
+                  </div>
+                  <!--台胞证结束--> 
+                  
+                </div>
+                <!--填写说明结束--> 
+                
+              </div>
+              <span class="order-passenger-operation">
+              <input type="checkbox" />
+              <em>存为常用乘机人</em></span> </dd>
+          </dl>
+          <dl>
+            <dt>证件信息</dt>
+            <dd>
+              <select name="select" id="select" class="order-set">
+                <option>护照</option>
+                <option>港澳通行证</option>
+                <option>台湾通行证</option>
+              </select>
+              <input type="text" value="" placeholder="证件号码" class="order-ipt" style="width:158px;" />
+            </dd>
+          </dl>
+          <dl class="remind">
+            <dd><i></i>特别提醒：为了您能顺利出行，请确保旅行结束日期至少比证件有效期早6个月。</dd>
+          </dl>
+          <dl>
+            <dt>证件签发地</dt>
+            <dd>
+              <input type="text" value="" placeholder="从下拉框中选择" class="order-ipt" style="width:110px;"/>
+              <!--选择-->
+              <div class="flightiner-city-nationality" style="display:none;">
+                <ul>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国香港(HK)</span><em>HongKong</em></li>
+                  <li><span>中国澳门(MO)</span><em>Macau</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                </ul>
+              </div>
+              <!--选择结束-->
+              <input type="text" value="" placeholder="证件有效期" class="order-ipt" style="width:132px;"/>
+            </dd>
+          </dl>
+          <dl>
+            <dt>乘客国籍</dt>
+            <dd>
+              <input type="text" value="" placeholder="从下拉框中选择" class="order-ipt" style="width:247px;" />
+              <!--选择-->
+              <div class="flightiner-city-nationality" style="display:none;">
+                <ul>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国香港(HK)</span><em>HongKong</em></li>
+                  <li><span>中国澳门(MO)</span><em>Macau</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                  <li><span>中国大陆(CN)</span><em>China</em></li>
+                </ul>
+              </div>
+              <!--选择结束--> 
+            </dd>
+          </dl>
+          <dl>
+            <dt>出生日期</dt>
+            <dd>
+              <input type="text" value="" placeholder="yyyy-mm-dd" class="order-ipt" style="width:247px;" />
+            </dd>
+          </dl>
+          <dl>
+            <dt>性别</dt>
+            <dd class="gender-content"> <span>
+              <input type="radio" checked="checked" />
+              男</span> <span>
+              <input type="radio" />
+              女 </span></dd>
+          </dl>
+          <dl>
+            <dt style="vertical-align:top;">保险费</dt>
+            <dd class="order-insurance">
+              <p> <span class="order-insurance-content" style="display:none;"> 1、保险责任：航空意外伤害保险责任420万元/航段，指被保险人持有效机票检票并进入保单载明的合法商业运营的客运飞机客舱时起至抵达机票载明的终点离开客运飞机客舱的期间内遭受意外伤害所导致的保险责任<br />
+                2、保险费：40元/航段，计划起飞时间之前退票可退保<br />
+                3、本产品由中国人寿、新华人寿、太平洋寿险、众安在线、华夏人寿、国华人寿、泰康在线等保险公司承保，销售服务方为携程保险代理有限公司、深圳众诚泰保险经纪公司 </span>
+                <input type="checkbox" />
+                <a href="#">尊享航意险</a> ¥<strong>40</strong>/份 <i>(全程1航段，每航段¥30 )最高赔付¥320万/航段</i></p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      
+      <!--乘机人结束-->
+      
+      <div class="order-left-menu top-border">出差原由</div>
+      
+      <!--出差原由开始-->
+      <div class="business-reason">
+        <textarea name="textarea" id="textarea" cols="45" rows="5" class="business-reason-txt" placeholder="出差事由"></textarea>
+      </div>
+      <!--出差原由结束-->
+      
+      <div class="order-left-menu top-border">审批人</div>
+      
+      <!--审批人开始-->
+      <div class="add-approver">
+        <dl>
+          <a href="#">
+          <dt>+</dt>
+          <dd>添加审批人</dd>
+          </a>
+        </dl>
+        <span class="arrow-gray"><img src="../App_Themes/Images/member/arrow-gray.png" /></span>
+        <dl>
+          <dt><img src="../upload/wangxin.jpg" /><i></i></dt>
+          <dd>王馨</dd>
+        </dl>
+        <span class="arrow-gray"><img src="../App_Themes/Images/member/arrow-gray.png" /></span>
+        <dl>
+          <dt><img src="../upload/yangxiaodan.jpg" /><i></i></dt>
+          <dd>杨晓丹</dd>
+        </dl>
+        <span class="arrow-gray"><img src="../App_Themes/Images/member/arrow-gray.png" /></span>
+        <dl>
+          <dt><img src="../upload/lixiaofei.jpg" /><i></i></dt>
+          <dd>李小飞</dd>
+        </dl>
+      </div>
+      
+      <!--审批人结束-->
+      
+      <div class="order-left-menu top-border">联系人</div>
+      
+      <!--联系人开始-->
+      
+      <div class="order-cntacts">
+        <div class="order-list order-list-Contacts">
+          <dl>
+            <dt><em>*</em>姓名</dt>
+            <dd>
+              <input type="text" value="杨晓丹" placeholder="" class="order-ipt" />
+            </dd>
+          </dl>
+          <dl>
+            <dt><em>*</em>手机号码</dt>
+            <dd>
+              <input type="text" value="18818066867" placeholder="" class="order-ipt" />
+            </dd>
+          </dl>
+        </div>
+      </div>
+      
+      <!--联系人结束--> 
+      
+    </div>
+    <!--左结束--> 
+    
+    <!--右-->
+    <div class="order-right"> 
+      
+      <!--航班-->
+      <div class="order-flight-info">
+        <div class="order-flight-info-standard">航班信息</div>
+        <div class="order-flight-explain"><i></i>航班的起飞和到达时间为当地时间</div>
+        <div class="flightinter-info-box">
+          <div class="flightinter-date-city"> 2017-06-13上海 - 新加坡（去程） </div>
+          
+          <!--信息-->
+          <div class="order-flight-info-list">
+            <ul>
+              <li class="order-flight-airline-shipping"><span> <img src="../upload/hk.png" />东方航空</span><span><strong>MU5301</strong></span> <span class="order-flight-model">325 
+                <!--机型--> 
+                <span class="order-right-layer model" style="display:none;">
+                <table width="500" border="0" cellspacing="0" cellpadding="0" class="order-flight-tab center">
+                  <tr>
+                    <td class="tdbg">计划机型</td>
+                    <td class="tdbg">机型名称</td>
+                    <td class="tdbg">类型</td>
+                    <td class="tdbg">最少座位数</td>
+                    <td class="tdbg">最多座位数</td>
+                  </tr>
+                  <tr>
+                    <td>325</td>
+                    <td>空中客车 A320</td>
+                    <td>窄体</td>
+                    <td>180</td>
+                    <td>180</td>
+                  </tr>
+                </table>
+                </span> 
+                <!--机型结束--> 
+                
+                </span> <span>经济舱</span></li>
+              <li class="order-flight-city-time">
+                <dl>
+                  <p>2017-06-07</p>
+                  <dt>07:30</dt>
+                  <dd>浦东机场</dd>
+                </dl>
+                <span><img src="../App_Themes/Images/member/right-arrow-short.png" /></span>
+                <dl class="last">
+                  <p>2017-06-07</p>
+                  <dt>09:50</dt>
+                  <dd>樟宜机场 </dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!--信息结束--> 
+        </div>
+        <div class="flightinter-price">
+          <P>票价<strong>¥1340</strong>（不含税费）</P>
+          <p><a href="#">[重新选择航班] </a></p>
+        </div>
+      </div>
+      <!--航班结束--> 
+      
+      <!--价格-->
+      <div class="order-price-detailed"></div>
+      <!--价格结束--> 
+      
+      <!--支付-->
+      <div class="order-payment">
+        <div class="order-payment-price"><strong>应付金额:</strong><span><em>¥</em>1030</span></div>
+        <div class="order-payment-passenger"><a href="#">明细(1名乘客)<i></i></a></div>
+        <div class="order-payment-list">
+          <dl>
+            <dt>成人</dt>
+            <dd>¥ 1010 x 1 人</dd>
+          </dl>
+          <dl>
+            <dt class="gray">票价</dt>
+            <dd class="gray">¥ 444 /人</dd>
+          </dl>
+          <dl>
+            <dt class="gray"> 税费 </dt>
+            <dd class="gray">¥ 566 /人</dd>
+          </dl>
+          <dl>
+            <dt> 保险费 </dt>
+            <dd>¥ 20/人</dd>
+          </dl>
+          <dl>
+            <dt> 快递费 </dt>
+            <dd>¥ 0/人</dd>
+          </dl>
+        </div>
+      </div>
+      <!--支付结束--> 
+      
+      <!--支付方式-->
+      <div class="order-payment-method"> 支付方式：
+        <label>
+          <input type="radio" />
+          现付</label>
+        <label>
+          <input type="radio" />
+          预存款</label>
+      </div>
+      <!--支付方式结束--> 
+      
+      <!--协议-->
+      <div class="flightinter-agreement">
+        <input type="checkbox" />
+        我已阅读并同意<a href="#">《航空意外险保险条款》</a> 及 <a href="#">《网上预订须知》</a></div>
+      <!--协议结束--> 
+      
+      <!--提交-->
+      <div class="order-btn">
+        <input type="button" value="同意条款并预订" onclick="javascript:location='success.html'">
+      </div>
+      <!--提交结束--> 
+      
+    </div>
+    <!--右结束--> 
+  </div>
+</div>
+<!--内容结束--> 
+
+<!--底部-->
+<div class="member-footer">
+  <p><a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em> <a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em> <a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em> <a href="../about.html#lianxi" target="_blank">联系我们</a></p>
+  <p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+</div>
+<!--底部结束--> 
+<!--在线客服-->
+<div id="top"></div>
+<!--在线客服结束--> 
+
+<!--审批人-->
+<div class="approver-layer" style="display:none;">
+  <div class="approver-content">
+    <div class="approver-menu"><span>选择审批人</span><a href="#"></a></div>
+    <div class="approver-box"> 
+      <!--左边-->
+      <div class="approver-box-left"> <span><a href="#"></a>王馨</span> <span><a href="#"></a>杨晓丹</span> <span><a href="#"></a>李小飞</span> <span><a href="#"></a>张秀智</span> <span><a href="#"></a>周琴</span> <span><a href="#"></a>平保春</span> </div>
+      <!--左边结束--> 
+      
+      <!--右边-->
+      <div class="approver-box-right">
+        <div class="approver-search"><i></i>
+          <input type="text" value="" placeholder="搜索企业联系人" />
+        </div>
+        <div class="approver-company-name">上海际珂信息科技有限公司</div>
+        <div class="approver-company-framework"><a href="#">上海际珂信息科技有限公司</a><em>></em><a href="#">技术研发中心</a><em>></em>技术部</div>
+        <div class="approver-select">
+          <input type="checkbox" />
+          全选</div>
+        <div class="approver-list"> 
+          <!--部门-->
+          <div class="approver-list-department" style="display:none;">
+            <ul>
+              <li>
+                <input type="checkbox" />
+                技术部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                客服部<em>10人</em></li>
+              <li>
+                <input type="checkbox" />
+                市场部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                技术部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                客服部<em>9人</em></li>
+              <li>
+                <input type="checkbox" />
+                市场部<em>9人</em></li>
+            </ul>
+          </div>
+          <!--部门结束--> 
+          
+          <!--列表-->
+          <div class="approver-list-pick">
+            <dl class="active">
+              <i><em></em></i>
+              <dt><img src="../upload/wangxin.jpg" /></dt>
+              <dd>
+                <p class="name">王馨</p>
+                <p>副总经理</p>
+              </dd>
+            </dl>
+            <dl class="active">
+              <i><em></em></i>
+              <dt><img src="../upload/yangxiaodan.jpg" /></dt>
+              <dd>
+                <p class="name">杨晓丹</p>
+                <p>客服经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/lixiaofei.jpg" /></dt>
+              <dd>
+                <p class="name">李小飞</p>
+                <p>技术经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/wangxin.jpg" /></dt>
+              <dd>
+                <p class="name">王馨</p>
+                <p>副总经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/yangxiaodan.jpg" /></dt>
+              <dd>
+                <p class="name">杨晓丹</p>
+                <p>客服经理</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt><img src="../upload/lixiaofei.jpg" /></dt>
+              <dd>
+                <p class="name">李小飞</p>
+                <p>技术经理</p>
+              </dd>
+            </dl>
+          </div>
+          <!--列表结束--> 
+          
+        </div>
+      </div>
+      <!--右边结束--> 
+      
+    </div>
+    <div class="approver-btn gray"><a href="#">确定</a></div>
+  </div>
+</div>
+<!--审批人结束-->
+</body>
+</html>

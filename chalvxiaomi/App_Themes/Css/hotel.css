@@ -1,0 +1,26 @@
+/*====================首页=================*/
+.hotel-banner{width:100%; height:450px; background:url(../Images/member/hotel-banner.jpg) no-repeat center;}
+.hotel-guarantee{ width:365px;}
+.hotel-guarantee dl{width:395px; overflow:hidden; margin-top:25px;}
+.hotel-guarantee dl dt{float:left; width:37px; height:37px;}
+.hotel-guarantee dl dd{ float:left; margin-left:10px; width:340px;}
+.hotel-guarantee dl dd p{display:block; font-size:14px; color:#999; line-height:18px;}
+.hotel-guarantee dl dd p span{ color:#404040; font-size:14px;}
+
+/*列表*/
+.hotel-type-menu{width:765px; border-bottom:2px solid #181777; overflow:hidden; height:33px; line-height:33px; padding-top:5px;}
+.hotel-type-menu span{ float:left; font-size:23px; color:#181777; line-height:100%; margin-right:20px;}
+.hotel-type-menu a{ float:left; font-size:12px;color:#181777;margin-right:8px;padding: 0 7px 2px;border-radius: 1px; height:25px; line-height:25px;} 
+.hotel-type-menu a.cur{background:#4C9ED9; color:#fff;}
+.hotel-type-menu a:hover{ background:#4C9ED9; color:#fff;}
+.hotel-hot-list{width:765px;}
+.hotel-hot-list dl{ width:765px; border-bottom:1px dotted #ccc; padding:20px 0px; overflow:hidden; position:relative;}
+.hotel-hot-list dl dt{ float:left; width:130px; height:90px;}
+.hotel-hot-list dl dt img{ width:130px; height:90px;}
+.hotel-hot-list dl dd{float:left; margin-left:20px; width:610px;}
+.hotel-hot-list dl dd p{display:block; font-size:12px; color:#999; padding-bottom:10px;}
+.hotel-hot-list dl dd p a{font-size:16px; color:#181777;}
+.hotel-hot-list dl dd p a:hover{text-decoration:underline;}
+.hotel-hot-list dl:last-child{border-bottom:none;}
+.hotel-hot-price{position:absolute; top:20px; right:0px; font-size:12px; color:#666;}
+.hotel-hot-price span{font-size:28px; color:#ff6600; display:inline-block; vertical-align:middle; padding:0px 5px;}

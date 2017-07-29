@@ -1,0 +1,70 @@
+/*====================首页=================*/
+.train-banner{width:100%; height:450px; background:url(../Images/member/train-banner.jpg) no-repeat center;}
+.train-screen{text-indent:70px;}
+.train-screen input{ display:inline-block; vertical-align:middle;}
+
+/*====================搜索列表=================*/
+.searchlist-box{width:100%;background:#f0f2f5; padding-top:50px; padding-bottom:20px;}
+.searchlist-content{width:1180px; margin:0px auto;}
+.serarchlist-again{width:1180px; height:45px; background:#fff; padding-top:15px;}
+.serarchlist-again ul li{float:left; margin-left:10px; color:#666;}
+.serarchlist-again ul li.serarch-type a{display:inline-block; height:22px; line-height:22px; margin:0px 8px; color:#999; border-bottom:2px solid #ccc; margin-top:2px; font-size:14px;}
+.serarchlist-again ul li.serarch-type a.active{ font-weight:bold; color:#181777; border-bottom:2px solid #181777;}
+.serarchlist-ipt{display:inline-block; margin-left:5px;border:1px solid #ccc; height:26px; line-height:26px; text-indent:5px; width:120px;}
+.serarchlist-set{border:1px solid #ccc; padding:4px 5px; font-size:12px;}
+.serarchlist-btn{border:none; background:#181777; color:#fff; height:28px; line-height:28px; padding:0px 15px; cursor:pointer;}
+.serarchlist-btn:hover{opacity:0.9;}
+.serarch-list-switch{display:inline-block; margin-left:5px; vertical-align:middle; width:32px; height:15px; background:url(../Images/member/serch-list-huan.png) no-repeat;}
+.serarch-list-switch:hover{background:url(../Images/member/serch-list-huan-over.png) no-repeat;}
+.serarchlist-voyage{width:1180px; padding:15px 0px; font-size:16px; font-weight:bold; position:relative;}
+.serarchlist-voyage em{position:absolute; top:16px; right:0px; font-size:12px; color:#999; font-weight:normal;}
+.serarchlist-voyage em strong{font-size:14px; color:#666; display:inline-block; margin:0px 5px;}
+.searchlist-content-box{width:1178px; border:1px solid #e6e6e6; background:#fff;}
+.train-list-screen{width:1150px; margin:0px auto; padding-top:10px; padding-bottom:20px;}
+.train-list-screen ul li{width:1150px; padding-top:10px; font-size:12px; color:#333;}
+.train-list-screen ul li label{display:inline-block; margin-right:30px;}
+.train-list-screen ul li label input{display:inline-block; vertical-align:middle;}
+
+/*列表*/
+.train-list{width:1178px;}
+.train-list-menu-tab{background:#f5f5f5;}
+.train-list-menu-tab td{padding:6px 0px; text-indent:20px; color:#333;}
+.train-list-menu-tab a{ color:#333;}
+.train-list-menu-tab a:hover{ text-decoration:underline;}
+.train-list-menu-tab a.active{ font-weight:bold; color:#181777;}
+.train-list-menu-tab a i{display:inline-block; width:7px; height:8px; vertical-align:middle; margin-left:5px;}
+.train-list-arrow-down{background:url(../Images/member/arrow-csolid-gary-n.png) no-repeat;}
+.train-list-arrow-up{background:url(../Images/member/arrow-csolid-gary-p.png) no-repeat;}
+.train-list-menu-tab a.active .train-list-arrow-up{ background:url(../Images/member/arrow-csolid-blue-p.png) no-repeat;}
+.train-list-menu-tab a.active .train-list-arrow-down{ background:url(../Images/member/arrow-csolid-blue-n.png) no-repeat;}
+.train-loop-list{width:1178px; margin-bottom:-1px}
+.train-loop-list ul li{border-bottom:1px solid #e6e6e6; padding:10px 0px;}
+.train-loop-list ul li #start{margin-right: 5px;color:#fff;font-size:12px;border-radius:3px}
+.train-loop-list ul li #end{margin-right: 5px;color:#fff;font-size:12px;border-radius:3px ;}
+.train-list-second{color:#999;}
+.train-list-second strong{font-size:14px; color:#333; display:inline-block; margin-right:5px; text-indent:0px;}
+.train-list-stop{position:relative;}
+.train-list-stop a{color:#181777;}
+.train-list-stop a:hover{text-decoration:underline;}
+.train-list-stop i{display:inline-block; vertical-align:middle; margin-left:5px; width:9px; height:5px; background:url(../Images/member/arrow-jiantou.png) no-repeat;}
+.train-list-stop-box{position:absolute; top:20px;left:20px; width:450px; height:300px; border:1px solid #181777; background:#fff; z-index:9; text-indent:0px;}
+.train-list-stop-top{position:absolute; top:0px; left:0px;}
+.train-list-stop-list{padding-top:30px; height:270px; overflow:hidden; overflow-y:auto;}
+.train-list-stop-tab td{padding:6px 0px; text-align:center; text-indent:0px;}
+.train-list-stop-menu td{background:#f5f5f5;}
+.train-list-stop-close{position:absolute; top:2px; right:2px; width:16px; height:16px; background:url(../Images/member/close-over-icon.png) no-repeat; z-index:99;}
+.train-departure-time{font-size:14px; font-weight:bold;}
+.train-shi-icon{display:inline-block; vertical-align:middle; margin-right:5px; width:12px; height:12px; background:url(../Images/member/train-shi-icon.png) no-repeat;}
+.train-guo-icon{display:inline-block; vertical-align:middle; margin-right:5px; width:12px; height:12px; background:url(../Images/member/train-guo-icon.png) no-repeat;}
+.train-zhong-icon{display:inline-block; vertical-align:middle; margin-right:5px; width:12px; height:12px; background:url(../Images/member/train-zhong-icon.png) no-repeat;}
+.train-loop-list-tab td{vertical-align:top; text-indent:20px; color:#333; line-height:20px;}
+.train-list-price{display:block; padding-bottom:2px;}
+.train-list-price span{display:inline-block; vertical-align:-1px; text-indent:10px; font-size:14px; color:#ff6600;}
+.train-list-price span.traintype{color:#000}
+.train-list-price em{font-size:12px; color:#ff6600;}
+.train-list-ticket{display:block; text-indent:0px; color:#009900; width:120px; text-align:center; padding-bottom:4px;}
+.train-list-ticket.gray{color:#999;}
+.train-list-book{display:block; margin-bottom:5px;}
+.train-list-book-btn{border:none; height:22px; line-height:22px; background:#181777; color:#fff; cursor:pointer; padding:0px 12px; border-radius:2px;}
+.train-list-book-btn:hover{ opacity:0.8;}
+.train-list-book-btn.disabled{ background:#ccc; cursor:default;}

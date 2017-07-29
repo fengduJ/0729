@@ -1,0 +1,222 @@
+/*========================================登录=====================================*/
+.login-banner{width:100%; height:460px; background:url(../Images/about/login-bg.jpg) no-repeat center top;}
+.login-box{position:relative; width:1180px; margin:0px auto; top:60px; background:#000; z-index:999}
+.login-content{position:absolute; top:20px; left:0px;width:350px; height:350px;   background-color: rgba(0,0,0,.2); background-image: url(about:blank); /* FIX IE7/8半透明穿透 */filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');z-index:999;}
+.login-list{width:300px; margin:0px auto;}
+.login-list h3{font-size:18px; color:#fff; padding-top:20px; padding-bottom:20px;}
+.login-list ul li{margin-bottom:15px; overflow:hidden;}
+.login-info{ padding:5px 0px;}
+.login-info span{ float:left; color:#ccc;}
+.login-info span input{ display:inline-block; vertical-align:middle; margin-right:3px;}
+.login-info a{float:right; color:#ccc;}
+.login-info a:hover{text-decoration:underline;}
+.login-list ul li.login-last{margin-bottom:20px;}
+.login-ipt{width:248px; font-size:14px; border:none; padding-left:50px; height:38px; line-height:38px; }
+.login-user-bg{background:url(../Images/Common/login-user-bg.png) #fff no-repeat left;}
+.login-pwd-bg{ background:url(../Images/Common/login-pwd-bg.png) #fff no-repeat left;}
+.login-btn{display:block; height:40px; line-height:40px; text-align:center; font-size:16px; color:#fff; border-radius:3px;}
+.btn-org{background:#f8b62b;height:40px; line-height:40px; border:none; width:300px; cursor:pointer;}
+.btn-org:hover{background:#f4a706;}
+.btn-blue{background:#1B47A3;}
+.btn-blue:hover{background:#0072BD}
+.menu-red{width:100%; padding-top:50px;}
+.menu-red p{display:block; text-align:center;}
+.menu-red p span{display:inline-block;border:3px solid #e50011; color:#e50011; padding:5px 50px; font-size:32px; position:relative;}
+.menu-red p span i{position:absolute; left:0px; bottom:0px; width:9px; height:8px; background:url(../Images/about/red-left-arrow.png) no-repeat; z-index:9;}
+.menu-red p span i.right{position:absolute; left:inherit; right:0px; bottom:0px; background:url(../Images/about/red-right-arrow.png) no-repeat;}
+.menu-red p.last{font-size:18px; color:#173163; padding-top:10px;}
+
+/*服务*/
+.product{width:100%; height:700px;position:relative;}
+.slide{width:100%;  height:700px;  margin:0 auto;}
+.slide_cont{ width:100%; height:700px; overflow:hidden;}
+.slide_cont ul li{float:left;height:700px;}
+.slide_point{ width:1180px; padding-top:20px;  margin:0 auto;}
+.slide_point span{display:inline-block; width:150px; text-align:center; height:50px; color:#FFF; font-size:22px;line-height:50px; cursor:pointer; border-radius:5px; margin:0px 50px;}
+.slide_point .cur_point{ background:#f8b62b;cursor:pointer;}
+.product-menu{width:100%; position:absolute; left:0px; top:0px;}
+.product-menu p{display:block; text-align:center;}
+.product-name{font-size:35px; color:#fff; padding-top:35px;}
+.product-name em{ display:inline-block; width:1180px; margin:0px auto; background:url(../Images/about/line-two.png) no-repeat bottom; padding-bottom:10px;}
+
+/*优势*/
+.advantage{width:100%; background:url(../Images/about/line.png) #f5f5f5 no-repeat center;  height:650px; border-bottom:1px solid #eee;}
+.advantage-content-menu{width:1180px; margin:0px auto; padding-top:35px; padding-bottom:30px;}
+.advantage-content-menu p{display:block; text-align:center; font-size:35px;color:#333; padding-bottom:10px;}
+.advantage-content-menu p span{font-size:16px; color:#666; font-weight:normal;}
+.advantage-content{width:1000px; margin:0px auto; padding-top:20px;}
+.advantage-content dl{float:left; width:250px; padding:20px 0px; }
+.advantage-content dl dt{width:250px; height:91px; margin:0px auto; text-align:center; }
+.advantage-content dl i{ display:inline-block; width:91px; height:91px;}
+.advantage-content dl dd{width:250px; padding-top:20px;}
+.advantage-content dl dd h5{display:block; font-size:18px; font-weight:bold; color:#173163; text-align:center;}
+.advantage-content dl dd p{font-size:14px; color:#173163; text-align:center; padding-top:5px; }
+.advantage-content dl:hover dd h5{color:#e50011;}
+.advantage-content dl:hover dd p{color:#e50011;}
+.advantage-content dl.advantage-hover-img01 i{background:url(../Images/about/youshi01.png) no-repeat;}
+.advantage-content dl.advantage-hover-img01:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi01hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img01:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img02 i{background:url(../Images/about/youshi02.png) no-repeat;}
+.advantage-content dl.advantage-hover-img02:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi02hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img02:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img03 i{background:url(../Images/about/youshi03.png) no-repeat;}
+.advantage-content dl.advantage-hover-img03:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi03hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img03:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img04 i{background:url(../Images/about/youshi04.png) no-repeat;}
+.advantage-content dl.advantage-hover-img04:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi04hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img04:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img05 i{background:url(../Images/about/youshi05.png) no-repeat;}
+.advantage-content dl.advantage-hover-img05:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi05hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img05:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img06 i{background:url(../Images/about/youshi06.png) no-repeat;}
+.advantage-content dl.advantage-hover-img06:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi06hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img06:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img07 i{background:url(../Images/about/youshi07.png) no-repeat;}
+.advantage-content dl.advantage-hover-img07:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi07hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img07:hover i{transform: scale(0.9);}
+.advantage-content dl.advantage-hover-img08 i{background:url(../Images/about/youshi08.png) no-repeat;}
+.advantage-content dl.advantage-hover-img08:hover i{width:91px; height:91px;transition: all 0.6s; background:url(../Images/about/youshi08hover.png) no-repeat;}
+.advantage-content dl.advantage-hover-img08:hover i{transform: scale(0.9);}
+
+/*资源整合*/
+.resources-box{width:100%; background:url(../Images/about/resourcesbg.jpg) no-repeat center top;}
+.resources-content{width:1180px; margin:0px auto; text-align:center; padding:50px 0px;}
+
+/*帮助*/
+.about-help{width:100%; background:url(../Images/about/xuanze.jpg) #f5f5f5 no-repeat center top; height:750px; }
+.about-help-box{width:1180px;  margin:0px auto; padding-top:80px;}
+.chuxingren{width:154px; height:421px; background:url(../Images/about/chuxingren.png) no-repeat; margin-left:65px;}
+.chuxingren:hover{background:url(../Images/about/chuxingren-over.png) no-repeat;}
+.xingzheng{width:164px; height:403px; background:url(../Images/about/xingzheng.png) no-repeat; margin-top:18px; margin-left:40px;}
+.xingzheng:hover{ background:url(../Images/about/xingzheng-over.png) no-repeat;}
+.jingli{width:130px; height:425px; background:url(../Images/about/jingli.png) no-repeat; margin-left:47px;}
+.jingli:hover{background:url(../Images/about/jingli-over.png) no-repeat;}
+.caiwu{width:143px; height:409px; background:url(../Images/about/caiwu.png) no-repeat; margin-top:12px; margin-left:33px;}
+.caiwu:hover{background:url(../Images/about/caiwu-over.png) no-repeat;}
+.boss{width:141px; height:419px; background:url(../Images/about/laoban.png) no-repeat; margin-left:30px;}
+.boss:hover{background:url(../Images/about/laoban-over.png) no-repeat;}
+.bubbleInfo{position:relative; width:235px; height:421px;float:left; }
+.bubbleInfo span{ position:absolute; bottom:-50px;height:30px; text-align:center; padding-top:10px;}
+.bubbleInfo span em{ display:inline-block;height:30px; line-height:30px; font-size:16px; color:#fff; border-radius:5px; padding:0px 30px; background:#898989;}
+.bubbleInfo:hover span em{ background:#3A99BE;}
+.bubbleInfo a{display:inline-block; position:relative;}
+.popup{position:absolute;display:none;z-index:50; border:1px solid #3f98be; padding:10px; width:240px; background:#fff;}
+.popup p{ display:block; color:#3f98be; font-size:14px; }
+.popup i{position:absolute; z-index:999;}
+.chuxingren-arrow{left:100px; bottom:-12px; width:20px; height:12px; background:url(../Images/about/center-arrow.png) no-repeat;}
+.xingzheng-arrow{left:118px; bottom:-12px; width:20px; height:12px; background:url(../Images/about/center-arrow.png) no-repeat;}
+.jingli-arrow{left:105px; bottom:-12px; width:20px; height:12px; background:url(../Images/about/center-arrow.png) no-repeat;}
+.caiwu-arrow{right:133px; bottom:-12px; width:20px; height:12px; background:url(../Images/about/center-arrow.png) no-repeat;}
+.boss-arrow{right:120px; bottom:-12px; width:20px; height:12px; background:url(../Images/about/center-arrow.png) no-repeat;}
+.regsiter{width:100%; padding-top:100px; background:url(../Images/about/register-now.jpg) no-repeat center;}
+.regsiter-box{width:100%; padding-bottom:100px;}
+.regsiter-box p{display:block; font-size:30px; text-align:center; color:#fff;}
+.regsiter-box p span{font-size:16px;}
+.regsiter-box p a{display:inline-block; margin-top:20px; width:150px; height:40px; text-align:center; line-height:40px; font-size:18px; color:#fff; border:1px solid #fff; border-radius:3px;}
+.regsiter-box p a:hover{background:#fff; color:#0084DB;}
+.regsiter-bom{ width:100%;   background-color: rgba(0,0,0,.2); background-image: url(about:blank); /* FIX IE7/8半透明穿透 */filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000'); padding:20px 0px;}
+
+
+/*========================================企业合作=====================================*/
+.apply-banenr{width:100%; height:350px; background:url(../Images/apply/Apply-banner.png) no-repeat center;}
+.apply-title{width:1180px; margin:0px auto;}
+.apply-title p{display:block; font-size:20px; font-weight:bold; text-align:center;color:#333; line-height:35px;}
+.apply-title p.last{font-size:12px; font-weight:normal; padding-top:10px; padding-bottom:25px; color:#666;}
+.apply-title p em{color:#0084DB}
+.apply-title p span{color:#ff6600;}
+.apply-box{width:100%; background:#f5f5f5; padding-top:100px; padding-bottom:50px;border-top:1px solid #fff; border-bottom:1px solid #fff;}
+.apply-demand{width:1100px; margin:0px auto; background:#fff;box-shadow: 0 1px 20px 0 #ccc; height:750px; overflow:hidden;}
+.apply-demand-left{float:left; width:799px;}
+.apply-demand-menu{width:750px; margin:0px auto;border-bottom: 1px dotted #dcdcdc;padding: 15px 0px; font-size:22px; color:#333;}
+.apply-demand-menu em{font-size:12px; color:#999; padding-left:5px;}
+.apply-demand-list{width:750px; margin:0px auto; padding:30px 0px;}
+.apply-demand-list dl{width:750px; overflow:hidden; margin-bottom:15px;}
+.apply-demand-list dl dt{float:left; float:left; font-size:12px; width:140px; text-align:right; margin-right:5px; padding-top:4px; font-weight:bold;}
+.apply-demand-list dl dt em{color:#F00; display:inline-block; margin-right:2px;}
+.apply-demand-list dl dt dd{float:left;}
+.apply-ipt{width: 300px; height: 30px; border: 1px solid #dcdcdc;border-radius: 2px; box-sizing: border-box;cursor: pointer; padding-left: 10px;}
+.apply-demand-list dl.horizontal dd{ float:left; width:150px;}
+.apply-demand-list dl.horizontal dd input{ width:150px;}
+.radio-content{line-height:30px;}
+.radio-content span{ margin-right:10px;}
+.radio-content input{ display:inline-block;  vertical-align:middle;}
+.apply-demand-list dl.bom{ margin-bottom:5px;}
+.faq{border: 1px solid #dcdcdc;border-radius: 2px; display:block; width:609px; height:60px; margin-left:30px; margin-top:10px; padding:5px; float:left}
+.apply-btn{text-align:center; padding-top:20px;}
+.apply-btn a{display:inline-block; width:140px; height:40px; line-height:40px; border-radius:5px; font-size:14px; color:#fff; font-weight:bold;}
+.apply-demand-right{float:right; width:300px; background:url(../Images/apply/apply-bg.png) #f8f8f8 no-repeat bottom; height:750px; border-left:1px solid #e6e6e6;}
+.apply-demand-right h3{display:block; font-size:16px; padding-top:20px; padding-bottom:10px; font-weight:bold; color:#333; width:260px; border-bottom:1px solid #ddd; margin:0px auto;}
+.apply-demand-right ul li{width:260px; margin:0px auto; margin-top:20px;}
+.apply-demand-right ul li p{display:block; color:#404040; padding-bottom:5px; font-size:13px;}
+.apply-demand-right ul li p strong{color:#000;}
+
+
+/*========================================关于我们=====================================*/
+.about-banenr{width:100%; height:350px; background:url(../Images/about/about-banner.png) no-repeat center;}
+.about-nav{ width:100%; height:70px; border-top:1px solid #fff; background:#f5f5f5; }
+.about-nav-list{ width:1180px; margin:0px auto;overflow:hidden;}
+.about-nav-list ul li{ float:left; width:295px; text-align:center;}
+.about-nav-list ul li a{ display:inline-block; width:100px; font-size:18px; color:#666; height:70px; line-height:70px;}
+.about-nav-list ul li a:hover{color:#0072BD;}
+.about-nav-list ul li.active a{ color:#0072BD; border-bottom:2px solid #0072BD; height:68px;}
+.about-menu{width:1180px; margin:0px auto; position:relative; height:30px; border-bottom:1px solid #e6e6e6;}
+.about-menu span{position:absolute; left:500px; top:8px; margin:0px auto; background:#fff; height:40px; line-height:38px; z-index:1; font-size:24px; padding:0px 50px; color:#0072BD; border-radius:50px; font-weight:bold; border:1px solid #e6e6e6;}
+.about-introduce{width:1180px; margin:0px auto; padding:50px 0px; overflow:hidden;}
+.about-introduce-left{float:left; width:324px; margin-top:50px;}
+.about-introduce-right{ float:right; width:830px; margin-top:50px;}
+.about-introduce-right p{ display:block; font-size:14px; line-height:28px; margin-bottom:10px; color:#666;}
+.about-introduce-right p strong{ color:#ff0000;}
+.about-introduce-right p.about-introduce-name{font-size:22px; font-weight:bold; color:#222;}
+
+/*历程*/
+.course{width:100%;height:400px; background:url(../Images/about/course.jpg) no-repeat center; padding:30px 0px;}
+.course-year{width:1180px; margin:0px auto; overflow:hidden; padding-top:80px;}
+.course-year ul li{float:left; width:85px; padding:5px; background:#E61874; color:#fff; font-size:14px;  margin-right:25px; border-radius:5px; text-align:center;}
+.course-year ul li.last{float:right; margin-right:0px;}
+.course-pic{width:1180px; margin:0px auto; text-align:center;}
+.course-content{width:1180px; margin:0px auto; overflow:hidden; padding-top:20px;}
+.course-content dl{float:left; width:85px; padding:5px; background:#E61874; color:#fff;  margin-right:25px; border-radius:5px;}
+.course-content dl.last{float:right; margin-right:0px;}
+
+/*团队*/
+.team{ width:1180px; margin:0px auto; padding-top:50px;}
+.team-content{width:1180px; padding:50px 0px; overflow:hidden;}
+.team-content ul li{float:left; width:270px; margin-right:30px; border:1px solid #ddd; box-shadow:1px 0px 5px #ccc}
+.team-content ul li:hover{ border:1px solid #999; background:#f5f5f5;}
+.team-content ul li dl{width:270px;}
+.team-content ul li dt{width:270px; height:300px; border-bottom:1px solid #fff; background:#666;}
+.team-content ul li dd{width:250px; margin:0px auto; padding-bottom:10px;}
+.team-content ul li dl:hover .team-info{ height:auto;}
+.team-content ul li dd p{display:block;}
+.team-name{font-size:24px; font-weight:bold; color:#000; padding-top:10px;}
+.team-zhiwei{font-size:16px; color:#222;}
+.team-info{font-size:13px; line-height:25px; color:#777; padding-top:5px; height:100px; overflow:hidden;}
+.team-content ul li.last{float:right; margin-right:0px;}
+
+/*联系我们*/
+.contact-us{width:100%; background:#f5f5f5; padding:20px 0px;}
+.contact-content{width:1180px; margin:0px auto; height:330px; padding-top:80px;}
+.contact-content-left{float:left; background:#fff; width:560px; padding:10px 0px; padding-top:20px;box-shadow: 0 1px 20px 0 #ccc;}
+.contact-content-left p{ display:block; font-size:14px; color:#666; margin-bottom:15px; text-indent:20px;}
+.contact-content-left p.contact-name{font-size:22px; color:#000;}
+.contact-content-left p.contact-tel{font-size:16px; font-weight:bold; color:#ff6600;}
+.contact-content-right{float:right;}
+
+/*========================================忘记密码=====================================*/
+.forgetpassword{width:100%; background:#f5f5f5; padding:100px 0px;}
+.forgetpassword-menu{width:800px; margin:0px auto; border-bottom:1px solid #ddd; font-size:24px; color:#333; padding-bottom:5px;}
+.forgetpassword-content{width:800px; margin:0px auto; padding-top:30px;}
+.forgetpassword-content ul li{display:block; font-size:14px; color:#333; margin-bottom:20px;}
+.forgetpassword-content ul li img{ display:inline-block; height:35px; vertical-align:middle; margin:0px 10px;}
+.forgetpassword-title{display:inline-block; width:150px; text-align:right; margin-right:10px;}
+.forgetpassword-ipt{border:1px solid #fff; background:#fff; height:35px; line-height:35px; text-indent:10px; width:300px; border:1px solid #ddd;border-radius:3px; font-size:14px;}
+.forgetpassword-ipt.code{width:150px;} 
+.forgetpassword-btn{padding-left:160px; padding-top:10px;}
+.forgetpassword-btn a{ display:inline-block; height:40px; line-height:40px; text-align:center; font-size:16px ; color:#fff; border-radius:3px;background:#f8b62b; width:300px;}
+.forgetpassword-btn a:hover{background:#f4a706;}
+.code-change{font-size:12px;}
+.code-change a:hover{text-decoration:underline;}
+.forgetpassword-content-success{width:800px; margin:0px auto;padding-top:30px;}
+.forgetpassword-content-success p{display:block; text-align:center; font-size:24px; padding-bottom:20px; color:#439D28;}
+.forgetpassword-content-success p i{display:inline-block; width:56px; height:56px; background:url(../Images/Common/success-icon.png) no-repeat;}
+.forgetpassword-btn.success{padding:0px;}

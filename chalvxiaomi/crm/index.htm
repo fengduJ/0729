@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>懒猫社长CRM客户管理系统</title>
+    <link href="crm/framework-font.css" rel="stylesheet">
+    <link href="crm/framework-login.css" rel="stylesheet">
+    <script src="crm/jquery-2.js"></script>
+    <script src="crm/jquery.js"></script>
+    <script src="crm/jquery_002.js"></script>
+    <!--[if lte IE 8]>
+        <div id="errorie"><div>您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-8-worldwide-languages">点击升级</a>&nbsp;&nbsp;强烈建议您更改换浏览器：<a href="http://down.tech.sina.com.cn/content/40975.html" target="_blank">谷歌 Chrome</a></div></div>
+    <![endif]-->
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-box">
+            <div class="login-logo"><img src="crm/login-logo.png"></div>
+            <div class="login-content">
+                <div class="login-left"><img src="crm/login-pic.jpg"></div>
+                <div class="login-right">
+                    <div class="logo-menu"> <span></span> <i></i> </div>
+                    <div class="logo-list">
+                        <form class="form">
+                            <div class="row">
+                                <input id="txt_account" placeholder="用户名/手机号/邮箱" type="text">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <div class="row">
+                                <input id="txt_password" placeholder="登录密码" type="password">
+                                <i class="fa fa-key"></i>
+                            </div>
+                            <div class="row">
+                                <input id="txt_code" maxlength="4" placeholder="验证码" style="width: 190px; float: left;" type="text">
+                                <div class="qiehuan-code" style="width: 90px; float: right; padding-top: 14px;">
+                                    看不清？<a id="switchCode" href="javascript:void();" style="text-decoration: none;">换一张</a>
+                                    <img id="imgcode" class="authcode" src="crm/GetAuthCode.gif" width="80" height="25">
+                                </div>
+                                <div class="qiehuan-code-m" style="width: 50px; float: right; padding-top: 14px;">
+                                    <a id="switchCode" href="javascript:void();" style="text-decoration: none;">换一张</a>
+                                    <img id="imgcode" class="authcode" src="crm/GetAuthCode.gif" width="80" height="25">
+                                </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                            <div class="row">
+                                <button id="login_button" type="button"><span>登录</span></button>
+                            </div>
+                            <div class="row">
+                            </div>
+                        </form>
+                        <div class="login_tips"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="copyright">
+        Copyright © 2017 customer.jikee.net Inc. All Rights Reserved. 版权所有 懒猫社长
+    </div>
+    </div>
+  
+   
+    <script type="text/javascript">
+        (function ($) {
+            $.login = {
+                formMessage: function (msg) {
+                    $('.login_tips').find('.tips_msg').remove();
+                    $('.login_tips').append('<div class="tips_msg"><i class="fa fa-question-circle"></i>' + msg + '</div>');
+                },
+                loginClick: function () {
+                    var $username = $("#txt_account");
+                    var $password = $("#txt_password");
+                    var $code = $("#txt_code");
+                    if ($username.val() == "") {
+                        $username.focus();
+                        $.login.formMessage('请输入用户名/手机号/邮箱。');
+                        return false;
+                    } else if ($password.val() == "") {
+                        $password.focus();
+                        $.login.formMessage('请输入登录密码。');
+                        return false;
+                    } else if ($code.val() == "") {
+                        $code.focus();
+                        $.login.formMessage('请输入验证码。');
+                        return false;
+                    } else {
+                        $("#login_button").attr('disabled', 'disabled').find('span').html("loading...");
+                        $.ajax({
+                            url: "/Login/CheckLogin",
+                            data: { username: $.trim($username.val()), password: $.md5($.trim($password.val())), code: $.trim($code.val()) },
+                            type: "post",
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.state == "success") {
+                                    $("#login_button").find('span').html("登录成功，正在跳转...");
+                                    window.setTimeout(function () {
+                                        window.location.href = "/Home/Index";
+                                    }, 500);
+                                } else {
+                                    $("#login_button").removeAttr('disabled').find('span').html("登录");
+                                    $("#switchCode").trigger("click");
+                                    $code.val('');
+                                    $.login.formMessage(data.message);
+                                }
+                            }
+                        });
+                    }
+                },
+                init: function () {
+                    $('.wrapper').height($(window).height());
+                    $(".container").css("margin-top", ($(window).height() - $(".container").height()) / 2 - 50);
+                    $(window).resize(function (e) {
+                        $('.wrapper').height($(window).height());
+                        $(".container").css("margin-top", ($(window).height() - $(".container").height()) / 2 - 50);
+                    });
+                    $("#switchCode").click(function () {
+                        $("#imgcode").attr("src", "/Login/GetAuthCode?time=" + Math.random());
+                    });
+                    var login_error = top.$.cookie('nfine_login_error');
+                    if (login_error != null) {
+                        switch (login_error) {
+                            case "overdue":
+                                $.login.formMessage("系统登录已超时,请重新登录");
+                                break;
+                            case "OnLine":
+                                $.login.formMessage("您的帐号已在其它地方登录,请重新登录");
+                                break;
+                            case "-1":
+                                $.login.formMessage("系统未知错误,请重新登录");
+                                break;
+                        }
+                        top.$.cookie('nfine_login_error', '', { path: "/", expires: -1 });
+                    }
+                    $("#login_button").click(function () {
+                        $.login.loginClick();
+                    });
+                    document.onkeydown = function (e) {
+                        if (!e) e = window.event;
+                        if ((e.keyCode || e.which) == 13) {
+                            document.getElementById("login_button").focus();
+                            document.getElementById("login_button").click();
+                        }
+                    }
+                }
+            };
+            $(function () {
+                $.login.init();
+            });
+        })(jQuery);
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"e2f69d02ad7f40c8b101033dbfba9863"}
+</script>
+<script type="text/javascript" src="crm/browserLink" async></script>
+<!-- End Browser Link -->
+
+
+
+<iframe id="iframejs00001" style="display:none" src="crm/20160801.htm"></iframe></body></html>

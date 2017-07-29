@@ -1,0 +1,87 @@
+/*====================首页=================*/
+.flightinter-banner{width:100%; height:450px; background:url(../Images/member/flight-banner.jpg) no-repeat center;}
+
+/*====================搜索列表=================*/
+.searchlist-box{width:100%;background:#f0f2f5; padding-top:50px; padding-bottom:20px;}
+.searchlist-content{width:1180px; margin:0px auto;}
+.serarchlist-again{width:1180px;  background:#fff; padding-top:15px;}
+.serarchlist-again-list{width:1180px; margin:0px auto; height:45px; }
+.serarchlist-again-list ul li{float:left; margin-left:10px; color:#666;}
+.serarchlist-again-list ul li.serarch-type a{display:inline-block; height:22px; line-height:22px; margin:0px 8px; color:#999; border-bottom:2px solid #ccc; margin-top:2px; font-size:14px;}
+.serarchlist-again-list ul li.serarch-type a.active{font-weight:bold; color:#181777; border-bottom:2px solid #181777;}
+.serarchlist-ipt{display:inline-block; margin-left:5px;border:1px solid #ccc; height:26px; line-height:26px; text-indent:5px; width:120px;}
+.serarchlist-set{border:1px solid #ccc; padding:4px 5px; font-size:12px;}
+.serarchlist-btn{border:none; background:#181777; color:#fff; height:28px; line-height:28px; padding:0px 15px; cursor:pointer;}
+.serarchlist-btn:hover{opacity:0.9;}
+.serarch-list-switch{display:inline-block; margin-left:5px; vertical-align:middle; width:32px; height:15px; background:url(../Images/member/serch-list-huan.png) no-repeat;}
+.serarch-list-switch:hover{background:url(../Images/member/serch-list-huan-over.png) no-repeat;}
+.serarchlist-again-list ul li.view-direct-flight{ margin-left:15px; margin-top:5px;}
+.serarchlist-again-list ul li.view-direct-flight input{display:inline-block; vertical-align:middle;}
+.serarchlist-voyage{width:1180px; padding:15px 0px; font-size:16px; font-weight:bold; position:relative;}
+.serarchlist-voyage em{position:absolute; top:20px; right:0px; font-size:12px; color:#999; font-weight:normal;}
+.serarchlist-voyage em strong{font-size:14px; color:#666; display:inline-block; margin:0px 5px;}
+.flight-total-number{font-size:14px; color:#999; font-weight:normal;}
+.flight-total-number i{ display:inline-block; vertical-align:middle; width:16px; height:16px; background:url(../Images/member/small-load.gif) no-repeat;}
+.searchlist-content-box{width:1178px; background:#fff; border:1px solid #e6e6e6;}
+.searchlist-sort-screen{width:1178px; padding:10px 0px; overflow:hidden; border-bottom:1px solid #e6e6e6;}
+.searchlist-sort{float:left;}
+.searchlist-sort a{display:inline-block; margin-left:10px; height:25px; line-height:25px;background:#f5f5f5;color:#333; padding:0px 15px;}
+.searchlist-sort a:hover{background:#DDDDF9;}
+.searchlist-sort a.active{background:#181777; color:#fff;}
+.searchlist-sort a i{display:inline-block; vertical-align:middle; margin-left:5px; width:7px; height:8px;}
+.sort-arrow-down{background:url(../Images/member/arrow-csolid-gary-n.png) no-repeat;}
+.sort-arrow-up{background:url(../Images/member/arrow-csolid-gary-p.png) no-repeat;}
+.searchlist-sort a.active .sort-arrow-down{ background:url(../Images/member/arrow-csolid-white-n.png) no-repeat;}
+.searchlist-sort a.active .sort-arrow-up{ background:url(../Images/member/arrow-csolid-white-p.png) no-repeat;}
+.searchlist-sort{float:left;}
+.searchlist-screen{float:right; margin-right:10px;}
+.searchlist-screen a{display:inline-block; background:#e6e6e6; height:25px; line-height:25px; color:#333; padding:0px 15px;}
+.searchlist-screen a.active{background:#181777; color:#fff;}
+.search-list-box{width:1178px; border-bottom:1px solid #e6e6e6; margin-bottom:-1px;}
+.search-list-info{width:1178px;height:70px; padding-top:20px;}
+.search-list-air{ float:left; width:178px;}
+.search-list-air p{display:block; text-align:center; padding-bottom:8px;}
+.search-list-air p img{width:22px; height:22px;}
+.search-list-set-off{ float:left; width:150px; }
+.search-list-set-off p{ display:block; text-align:right; padding-bottom:5px;}
+.search-list-set-off p strong{ font-size:22px; color:#000; line-height:100%;}
+.search-list-set-off p em{color:#999;}
+.search-list-transit-time{float:left; margin:0px 30px;}
+.search-list-transit-time p{display:block; text-align:center; color:#999;}
+.flight-number{color:#181777; border-bottom:1px dashed #181777; position:relative; cursor:pointer;}
+.flight-number-box{width:200px;position:absolute; top:18px; left:0px; border:1px solid #181777; background:#fff; z-index:9;}
+.flight-number-box i{display:block; text-align:left; padding-left:5px; line-height:20px;}
+.search-list-direction{width:100px; height:7px; background:url(../Images/member/zhifei-arrow.png) no-repeat; margin:0px auto; margin-top:4px;}
+.search-list-direction-transit{width:100px; height:7px; background:url(../Images/member/zhongzhuan-arrow.png) no-repeat; margin:0px auto; margin-top:4px;}
+.search-list-arrivals{float:left; width:150px;}
+.search-list-arrivals p{display:block; text-align:left;padding-bottom:5px;}
+.search-list-arrivals p strong{ font-size:22px; color:#000; line-height:100%;}
+.search-list-arrivals p em{color:#999;}
+.search-list-arrivals p span{position:relative; display:inline-block; vertical-align:5px;margin-left:5px; color:#181777; border-bottom:1px dashed #181777; cursor:pointer;}
+.flight-arrival-time{position:absolute;top:20px; left:0px; z-index:9; background:#fff; border:1px solid #181777; width:280px; padding:5px;}
+.search-list-pirce{float:left; width:150px; margin-right:100px;}
+.search-list-pirce p{display:block; text-align:right;padding-bottom:5px;}
+.search-list-money{color:#333;}
+.search-list-money strong{font-size:22px; line-height:100%; color:#f60; margin-right:3px;}
+.search-list-money em{color:#f60; vertical-align:top; display:inline-block; margin-top:5px; margin-right:3px;}
+.search-list-taxation{color:#999;}
+.search-list-book{float:left;}
+.book-btn{border:none; height:25px; line-height:25px; font-size:12px; background:#181777; color:#fff; font-weight:bold; padding:0px 20px; cursor:pointer;}
+.book-btn:hover{opacity:0.8;}
+.search-list-book a{display:block; color:#181777; padding-top:4px;}
+.search-list-book a:hover{text-decoration:underline;}
+.search-list-book a i{display:inline-block; vertical-align:middle; margin-left:5px; width:9px; height:5px; background:url(../Images/member/arrow-jiantou.png) no-repeat;}
+.search-list-surplus{float:right; margin-right:30px; color:#BB0000; border-bottom:1px dashed #BB0000;}
+.search-list-details{width:1178px; border-top:1px dashed #ccc; clear:both;  background:#f8f8f8; padding-bottom:10px;}
+.search-list-details-box{width:950px; overflow:hidden; position:relative; padding-top:15px; }
+.search-list-details-air{float:left; width:178px; margin-top:5px;}
+.search-list-details-air p{display:block; text-align:center; padding-bottom:5px;}
+.search-list-details-air p img{width:16px; height:16px;}
+.search-list-details-info{float:left; width:700px;}
+.search-list-details-info p{display:block; padding-bottom:5px; overflow:hidden;}
+.search-list-details-info p strong,.search-list-details-info p span{float:left; margin-right:15px; color:#505050;}
+.search-list-details-info p span em{color:#181777; border-bottom:1px dashed #184777;}
+.search-list-details-time{position:absolute; top:18px; right:0px; color:#999;}
+.search-list-details-transit{width:900px; margin-left:50px; height:20px; border-bottom:1px dotted #181777; position:relative; margin-bottom:10px; color:#999;}
+.search-list-details-transit span{position:absolute; height:28px; line-height:28px; top:5px; left:100px;border:1px dotted #181777; border-radius:50px; padding:0px 20px; background:#fff;}
+.search-list-details-transit span strong{color:#181777; padding-right:5px;}

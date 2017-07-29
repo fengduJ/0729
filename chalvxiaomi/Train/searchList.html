@@ -1,0 +1,369 @@
+﻿<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>差旅小秘</title>
+<link href="../App_Themes/Css/Common.css" rel="stylesheet" type="text/css" />
+<link href="../App_Themes/Css/train.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../plug-in/data/dateSelect.css"/>
+<link rel="stylesheet" type="text/css" href="../plug-in/kuCity/kuCity.css"/>
+<script src="../Scripts/Jquery/jquery-1.7.2.min.js" language="javascript" type="text/javascript"></script>
+<script src="../Scripts/Normal/normal.js" language="javascript" type="text/javascript"></script>
+<script  src="../plug-in/data/dateSelect.js"  type="text/javascript"></script>
+<script type="text/javascript" src="js/searchList.js"></script>
+<script type="text/javascript" src="../plug-in/kuCity/kuCity.js"></script>
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="member-header-menu">
+  <div class="member-header-menu-content">
+    <div class="member-header-menu-left">上海猫友科技股份有限公司<em>|</em>企业ID：<sapn id="eld">68568</sapn></div>
+    <div class="member-header-menu-right"> <span><i></i><sapn id="username">杨晓丹</sapn></span> <a href="../my/index.html">我的差旅</a> <a href="../index.html">退出</a> <span><i class="tel-icon"></i>客服专线：400-720-9969</span> </div>
+  </div>
+</div>
+
+<!--导航-->
+<div class="head-v3">
+  <div class="navigation-up">
+    <div class="navigation-inner">
+      <div class="navigation-v3">
+        <ul>
+          <li class="logo-member"><a href="../Member/index.html"><img src="../App_Themes/Images/logo-member.png" /></a></li>
+          <li class="" _t_nav="home">
+            <h2> <a href="../Member/index.html">首页</a> </h2>
+          </li>
+          <li class="nav-up-selected-inpage" _t_nav="yuding">
+            <h2> <a href="../Flight/index.html">预订<i></i></a> </h2>
+          </li>
+          <li class="" _t_nav="fuli">
+            <h2> <a href="#">企业福利<i></i></a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../My/index.html">我的差旅</a> </h2>
+          </li>
+          <li class="last">
+            <h2> <a href="../Todo/index.html">审批记录</a> </h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-down">
+    <div id="yuding" class="nav-down-menu menu-1" style="display:none0;" _t_nav="yuding">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:108px;">
+          <dd> <a href="../Flight/index.html">国内机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Flightinter/index.html">国际机票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Hotel/index.html">酒店</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Train/index.html" class="cur">火车票</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="../Car/index.html">租车</a> </dd>
+        </dl>
+      </div>
+    </div>
+    <div id="fuli" class="nav-down-menu menu-3 menu-1" style="display: none;" _t_nav="fuli">
+      <div class="navigation-down-inner">
+        <dl style="margin-left:325px;">
+          <dd> <a href="#">体检</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">企业培训</a> </dd>
+        </dl>
+        <dl>
+          <dd> <a href="#">礼品卡</a> </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--头部结束--> 
+
+<!--内容-->
+<div class="searchlist-box">
+  <div class="searchlist-content">
+    <div class="crumbs-nav"><a href="#">预订</a>><a href="#">火车票</a>><span id="tophref">上海虹桥- 北京南</span> </div>
+    
+    <!--搜索-->
+    <div class="serarchlist-again">
+      <ul>
+        <li class="serarch-type"><a href="javascript:;" class="active">因公</a><a href="javascript:;">因私</a></li>
+        <li>出发城市
+          <input type="text" id="forcontiy" value="" class="serarchlist-ipt">
+          <a href="#" class="serarch-list-switch" id="huan"></a> </li>
+        <li>到达城市
+          <input type="text" id="tocontiy" value="" class="serarchlist-ipt">
+        </li>
+        <li>出发日期
+          <input type="text" value="" id="time" class="serarchlist-ipt">
+        </li>
+        <li>
+          <input type="button" name="button" id="button" value="搜索" class="serarchlist-btn">
+        </li>
+      </ul>
+    </div>
+    <!--搜索结束-->
+    <div class="serarchlist-voyage"><span id="text">
+    	上海虹桥 - 北京南  (2017-05-24 周五)
+    </span><em>共<strong id="number">48</strong>个车次</em></div>
+    <div class="searchlist-content-box"> 
+      <!--日期-->
+      <div class="search-list-week" >
+        <div class="air-week-btn air-week-btn-prev"><!--前面没有日期了加这个样式"disbland"--><a href="#"><i></i></a></div>
+        <div class="air-week-list train-week-list" style="position: relative;overflow: hidden;">
+          <ul id="timelist" style="position: absolute;">
+            <!--<li><a href="#">06-03星期六</a></li>
+            <li><a href="#">06-04星期日</a></li>
+            <li><a href="#">06-05星期一</a></li>
+            <li><a href="#">06-06星期二</a></li>
+            <li class="active"><a href="#">06-07星期三</a></li>
+            <li><a href="#">06-08星期四</a></li>
+            <li><a href="#">06-09星期五</a></li>
+            <li><a href="#">06-10星期六</a></li>
+            <li><a href="#">06-11星期日</a></li>
+            <li><a href="#">06-12星期一</a></li>
+            <li><a href="#">06-13星期二</a></li>
+            <li><a href="#">06-14星期三</a></li>
+            <li><a href="#">06-15星期四</a></li>-->
+          </ul>
+        </div>
+        <div class="air-week-btn air-week-btn-next"><!--后面没有日期了加这个样式"disbland"--><a href="javascript:;"><i></i></a></div>
+      </div>
+      <!--日期结束--> 
+      
+      <!--筛选-->
+      <div class="train-list-screen">
+        <ul>
+          <li>车型选择：
+            <label>
+              <input type="checkbox" id="isG" >
+              G-高速</label>
+            <label >
+              <input type="checkbox" id="isD">
+              D-动车组</label>
+            <label >
+              <input type="checkbox" id="isT">
+              T-特快</label>
+            <label >
+              <input type="checkbox" id="isQ">
+              其他</label>
+          </li>
+          <li>出发时段：
+            <label>
+              <input type="checkbox">
+              上午(00:00-12:00)</label>
+            <label>
+              <input type="checkbox">
+              下午(12:00-18:00)</label>
+            <label>
+              <input type="checkbox">
+              晚上(18:00-23:59)</label>
+          </li>
+        </ul>
+      </div>
+      <!--筛选结束--> 
+      
+      <!--加载中-->
+      <div class="train-load" style="display:none;"><i></i></div>
+      <!--加载中结束--> 
+      
+      <!--暂无-->
+      <div class="searchlist-no" style="display:none;">
+        <p><i></i></p>
+        <p>很抱歉！由于铁路局系统查询拥堵，您的此次查询失败。请重试或者稍后再试！</p>
+      </div>
+      <!--暂无结束--> 
+      
+      <!--列表-->
+      <div class="train-list">
+        <table width="1178" border="0" cellspacing="0" cellpadding="0" class="train-list-menu-tab">
+          <tr>
+            <td width="168">车次</td>
+            <td width="168"><a href="#" class="active">发/到时间<i class="train-list-arrow-up"></i></a></td>
+            <td width="168">发/到站</td>
+            <td width="168"><a href="#">耗时<i class="train-list-arrow-down"></i></a></td>
+            <td width="218">参考票价</td>
+            <td width="169">票量(仅供参考)</td>
+            <td width="119">&nbsp;</td>
+          </tr>
+        </table>
+        
+        <!--循环列表开始-->
+        <div class="train-loop-list">
+          <ul id="ulList">
+            <!--<li>
+              <table width="1178" border="0" cellspacing="0" cellpadding="0" class="train-loop-list-tab">
+                <tr>
+                  <td width="168"><p class="train-list-second"><strong>G102</strong>高速动车</p>
+                    <div class="train-list-stop"><a href="#">经停站<i></i></a> 
+                      
+                     
+                      <div class="train-list-stop-box" style="display:none;">
+                        <div class=   bkj"train-list-stop-top"> <em class="train-list-stop-close"></em>
+                          <table width="450" border="0" cellspacing="0" cellpadding="0" class="train-list-stop-tab">
+                            <tr class="train-list-stop-menu">
+                              <td width="46">站序</td>
+                              <td width="111">站名</td>
+                              <td width="103">到站时间</td>
+                              <td width="84">出发时间</td>
+                              <td width="106">停留时间</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="train-list-stop-list">
+                          <table width="450" border="0" cellspacing="0" cellpadding="0" class="train-list-stop-tab">
+                            <tr>
+                              <td width="45">1</td>
+                              <td width="110">上海虹桥</td>
+                              <td width="105">06:53</td>
+                              <td width="85">06:53</td>
+                              <td width="105">--</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>无锡东</td>
+                              <td>07:21</td>
+                              <td>07:28</td>
+                              <td>7</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>南京南</td>
+                              <td>08:12</td>
+                              <td>08:14</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>滁州</td>
+                              <td>08:32</td>
+                              <td>08:34</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>5</td>
+                              <td>徐州东</td>
+                              <td>09:35</td>
+                              <td>09:39</td>
+                              <td>4</td>
+                            </tr>
+                            <tr>
+                              <td>6</td>
+                              <td>济南西</td>
+                              <td>10:42</td>
+                              <td>10:44</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>7</td>
+                              <td>沧州西</td>
+                              <td>11:30</td>
+                              <td>11:32</td>
+                              <td>2</td>
+                            </tr>
+                            <tr>
+                              <td>8</td>
+                              <td>北京南</td>
+                              <td>12:23</td>
+                              <td>12:23</td>
+                              <td>--</td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                     
+                      
+                    </div></td>
+                  <td width="168"><p class="train-departure-time">06:39</p>
+                    <p>12:18</p></td>
+                  <td width="168"><p><i class="train-shi-icon"></i>上海虹桥</p>
+                    <p><i class="train-zhong-icon"></i>北京南</p></td>
+                  <td width="168">5小时39分</td>
+                  <td width="219"><div class="train-list-price">二等座<span><em>¥</em>553.0</span></div>
+                    <div class="train-list-price">一等座<span><em>¥</em>933.0</span></div>
+                    <div class="train-list-price">商务座<span><em>¥</em>1748.0</span></div></td>
+                  <td width="171"><div class="train-list-ticket">充足</div>
+                    <div class="train-list-ticket">充足</div>
+                    <div class="train-list-ticket">充足</div></td>
+                  <td width="116"><div class="train-list-book">
+                      <input type="button" value="预订" class="train-list-book-btn" onclick="javascript:location='order.html'">
+                    </div>
+                    <div class="train-list-book">
+                      <input type="button" value="预订" class="train-list-book-btn" onclick="javascript:location='order.html'">
+                    </div>
+                    <div class="train-list-book">
+                      <input type="button" value="预订"  class="train-list-book-btn" onclick="javascript:location='order.html'">
+                    </div></td>
+                </tr>
+              </table>
+            </li>
+            -->
+          </ul>
+        </div>
+        <!--循环列表结束--> 
+        
+      </div>
+      <!--列表结束--> 
+    </div>
+  </div>
+</div>
+<!--内容结束--> 
+
+<!--底部-->
+<div class="member-footer">
+  <p><a href="../about.html#qiye" target="_blank">公司简介</a> <em>|</em> <a href="../about.html#licheng" target="_blank">发展历程</a> <em>|</em> <a href="../about.html#tuandui" target="_blank">我们的团队</a> <em>|</em> <a href="../about.html#lianxi" target="_blank">联系我们</a></p>
+  <p>Copyright © 2005-2017 SEC91.COM 差旅小秘 版权所有 沪ICP备13006682号-1</p>
+</div>
+<!--底部结束--> 
+<!--在线客服-->
+<div id="top"></div>
+<!--在线客服结束--> 
+<!--超出标准提示-->
+<div class="excess-prompt" style="display:none;">
+  <div class="excess-prompt-box">
+    <div class="excess-prompt-menu"><span>请确定没有选择最低车次路线的原因</span><a href="#"></a></div>
+    <div class="excess-reason">
+      <h3>基于贵公司的差旅政策，因您未选择最低车次，故请您选择原因：</h3>
+      <ul>
+        <li>
+          <input type="radio">
+          陪同客户或领导</li>
+        <li>
+          <input type="radio">
+          车次环境偏好</li>
+        <li>
+          <input type="radio">
+          火车站选择</li>
+        <li>
+          <input type="radio">
+          改签或退票因素</li>
+        <li>
+          <input type="radio">
+          出发和到达时间不合适</li>
+        <li>
+          <input type="radio">
+          经批准可不选择最低价车次</li>
+      </ul>
+    </div>
+    <div class="excess-btn"><a href="#">确定</a></div>
+    <div class="excess-flight">
+      <P>基于贵公司的差旅政策，您选择的时间段内的最低价车次为：</P>
+      <p><span>上海虹桥-北京南</span> <span>G108</span><span>08:52出发 </span><span>￥553</span></p>
+    </div>
+    <div class="excess-btn"><a href="#">预订该车次</a></div>
+  </div>
+</div>
+<!--超出标准提示结束-->
+
+</body>
+
+</html>

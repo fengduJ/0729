@@ -1,0 +1,94 @@
+﻿*{font-family: sans-serif,Arial,Verdana,"Trebuchet MS","Microsoft YaHei","STXihei";}
+html{color: #333; background:#eee; font-family:"Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei; max-width:640px; margin:0px auto;}
+body{font-family:"Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei; background:#eee; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {margin: 0;padding: 0}
+h1, h2, h3, h4, h5, h6{ font-weight:normal;}
+em,dfn{font-style:normal}
+ul{list-style:none;}
+li,dl,dt{list-style:none}
+img{border:0;}
+i{ font-style:normal;}
+em{font-style:normal}
+strong{ font-weight:bold; font-weight:700;}
+input{ font-size:12px; vertical-align:middle; outline:none;}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+a:link, a:visited {text-decoration: none;}
+a{text-decoration:none;blr:expression_r(this.onFocus=this.blur())}
+a{outline:none;blr:expression(this.onFocus=this.blur());}
+input[type="submit"], input[type="reset"],input[type="text"],input[type="tel"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
+.common-btn{width:94%; margin:0px auto; padding-bottom:10px;}
+input,button,select,textarea{outline:none}
+.main{width:100%;}
+.main-bom{width:100%;margin-bottom:50px;}
+.transparent-background{position:absolute; left:0x; top:0px; width:100%; height:100%;FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7f000000, endColorstr=#7f000000); background-color:rgba(0,0,0,0.6);z-index:999999;} 
+.small-arrow{position:absolute; width:6px; height:11px; background:url(Images/btn_more_yellow@3x.png) no-repeat; background-size:6px 11px; top:0px; right:10px;}
+.common-banner{width:100%;}
+.common-banner img{width:100%; display:block;}
+
+
+/*头部*/
+.header{width:100%;clear:both;text-align:center; position:absolute; left:0px; top:0px;FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7f18244B, endColorstr=#7f18244B); background-color:rgba(24,36,75,0.7);z-index:999999; padding-top:6px; padding-bottom:3px;}
+.header a{display:inline-block; width:120px; height:28px; background: url(Images/logo.png) no-repeat; background-size:120px 28px; }
+.header-top{width:100%; height:45px;line-height:45px;position:absolute; left:0px; top:0px;FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#7f18244B, endColorstr=#7f18244B); background-color:rgba(24,36,75,0.7);z-index:999999; text-align:center;}
+.header-top h1{display:inline-block; text-align:center; font-size:16px; color:#fff;}
+.header-top-left{position:absolute; top:0px; left:0px; width:45px; height:45px; text-align:center;}
+.header-top-left a{display:block;}
+.header-top-left a i{display:inline-block; width:10px; height:16px; background:url(Images/header-left-arrow.png) no-repeat; background-size:10px 16px; margin-top:14px;}
+.header-top-right{ position: absolute; top:0px; right:0px; width:45px; height:45px; text-align:center;}
+.header-top-right a{display:block;}
+.header-top-right a i{display:inline-block; width:20px; height:16px; background:url(Images/classification-icon.png) no-repeat; background-size:20px 16px; margin-top:14px;}
+.header-nav{width:100%;  position:absolute; left:0px; top:45px; background:#fff; z-index:9999; padding-bottom:20px;}
+.header-nav::after{content: '';position: absolute;left:0px;width: 100%;-webkit-transform: scaleY(0.5);transform: scaleY(0.5);-webkit-transform-origin: 0 100%;transform-origin: 0 100%; bottom:0px; border-bottom:1px #e6e6e6 solid;}
+.header-nav a{font-size:12px; color:#F08200;}
+.header-nav dl{float:left; width:33.33%; margin-top:15px; line-height:15px;}
+.header-nav dl dt{display:block; text-align:center; padding-bottom:5px;}
+.header-nav dl dt img{width:40px; height:40px;}
+.header-nav dl dd{display:block; text-align:center;}
+.header-nav i{position:absolute; top:-6px; right:13px; width:16px; height:6px; background:url(Images/arrow-p.png) no-repeat; background-size:16px 6px; z-index:99;}
+
+
+/*底部导航*/
+.footer{width:100%; background:#2D363F;  padding-bottom:13px; padding-top:5px;}
+.footer p{display:block; text-align:center; font-size:12px; color:#A8AEB3; padding-top:8px;}
+.footer p a{ display:inline-block; color:#A8AEB3; padding:0px 10px;}
+.footer-nav{width:100%; position:fixed; left:0px; bottom:0px; height:50px; z-index:20;}
+.footer-nav ul li{float:left;}
+.footer-nav-tel{float:left; width:40%; height:50px; line-height:50px; background:#E70012;}
+.footer-nav-tel a{display:block; text-align:center; font-size:16px; color:#fff;}
+.footer-nav-tel a i{display:inline-block; vertical-align:middle; margin-right:5px; width:25px; height:25px; background:url(Images/tel-icon.png) no-repeat; background-size:100%;}
+.footer-nav-zixun{float:left; width:40%; height:50px; line-height:50px; background:#EC6A16;}
+.footer-nav-zixun a{display:block; text-align:center; font-size:16px; color:#fff;}
+.footer-nav-zixun a i{display:inline-block; vertical-align:middle; margin-right:5px; width:25px; height:25px; background:url(Images/zixun-icon.png) no-repeat; background-size:100%;}
+.footer-nav-home{float:left; width:20%; height:50px; line-height:50px; background:#1D2856;}
+.footer-nav-home a{font-size:14px; color:#fff; display:block; text-align:center;}
+.footer-nav-home a i{display:inline-block; vertical-align:-4px; margin-right:5px; width:18px; height:18px; background:url(Images/home-icon.png) no-repeat; background-size:100%;}
+
+ 
+/*暂无提示*/
+.common-no-data{width:100%; padding:100px 0px;}
+.common-no-data p{display:block; text-align:center; font-size:14px; padding-bottom:10px; color:#999;}
+.common-no-data p i{display:inline-block;width:50px;height:50px; background:url(Images/icon-tishi.png) no-repeat; background-size:100%;}
+
+
+
+/*404*/
+.error-404{width:100%; clear:both; padding-top:120px;}
+.error-404 p{display:block; text-align:center; font-size:16px; color:#999; margin-bottom:20px;}
+.error-404 p i{display:inline-block; width:80px; height:80px;background:url(Images/error-icon.png) no-repeat;background-size:80px 80px;}
+.error-404 p a{display:inline-block; height:38px; line-height:38px; color:#f60; border:1px solid #f60; border-radius:3px; padding:0px 30px;}
+
+
+
+
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+}
+
+
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+ }
+
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6P */
+ }
